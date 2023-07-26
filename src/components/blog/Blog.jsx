@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Contact() {
+function Blog() {
   return (
     <div>
-      Contact
+      Blog
     </div>
   )
 }
 
-export default Contact
+export default Blog

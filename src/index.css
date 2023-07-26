@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    @apply font-ubuntu w-screen h-screen overflow-hidden p-0 m-0 bg-mainColor;
+}
+nav {
+    @apply absolute top-0 left-0 bottom-0 w-full;
+}
+.background {
+    @apply absolute top-0 left-0 bottom-0 w-full bg-BgTextColor
+}
+button{
+    @apply outline-none border-none select-none cursor-pointer absolute top-[18px] left-[15px] w-[40px] h-[40px] rounded-full;
+}
+.refresh {
+    @apply p-2 absolute bg-opacity-40 bg-black rounded-lg w-20 h-20 top-10 right-10 flex justify-center items-center cursor-pointer;
+  }
+  
