@@ -12,9 +12,8 @@ const Path = props => (
 );
 
 export const MenuToggle = ({ toggle,isClick }) =>{
-  
 return (
-  <button onClick={toggle}>
+  <button className={isClick?'bg-redColor':'bg-transparent'} onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23" >
       <Path
         variants={{
