@@ -29,7 +29,6 @@ export const Example = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-  const [isClick,setIsClick] = useState(false)
   return (
     <motion.nav
       initial={false}
@@ -39,10 +38,7 @@ export const Example = () => {
     >
       <motion.div className="background" variants={sidebar} />
       <Navigation />
-      <MenuToggle toggle={() => {
-        toggleOpen();
-        setIsClick(!isClick);
-      }} isClick={isClick} />
+      <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );
 };
