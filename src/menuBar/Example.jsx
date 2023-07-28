@@ -37,6 +37,7 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
+      <span className="overlay fixed w-full h-[60px] bg-mainColor"></span>
       <Author name={'Abdellah'} />
       <motion.div className="background" variants={sidebar} />
       <Navigation />

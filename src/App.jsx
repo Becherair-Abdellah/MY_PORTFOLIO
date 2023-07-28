@@ -14,8 +14,8 @@ function App() {
 <>
 
 <Example/>
-    <Routes>
-
+<div className='mainpage mt-16 mb-16 h-[100vh]'>
+<Routes>
     <Route exact path='/' element={<Home/>} />
     <Route exact path='/about' element={<About/>} />
     <Route exact path='/contact' element={<Contact/>} />
@@ -23,6 +23,7 @@ function App() {
     <Route exact path='/blog' element={<Blog/>} />
     <Route exact path='/*' element={<h1>Not Found !!</h1>} />
     </Routes>
+</div>
 </>
 
   )
