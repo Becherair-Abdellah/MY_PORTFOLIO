@@ -4,6 +4,7 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
+import Author from "./Author";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -36,6 +37,7 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
+      <Author name={'Abdellah'} />
       <motion.div className="background" variants={sidebar} />
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />

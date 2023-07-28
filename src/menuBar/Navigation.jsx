@@ -4,15 +4,19 @@ import { MenuItem } from "./MenuItem";
 
 const variants = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    x:0,
   },
   closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+x:-200
+    
+    
   }
 };
 
 export const Navigation = () => (
-  <motion.ul variants={variants}>
+  <motion.ul variants={variants} initial={{x:0}}>
     {itemIds.map((ele, i) => (
       <MenuItem  i={ele}  key={i} />
     ))}

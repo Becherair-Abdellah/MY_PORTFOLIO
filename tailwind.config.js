@@ -21,6 +21,7 @@ export default {
       },
       textColor:{
         TextColor: '#f2f2f2ff',
+        TextredColor: '#ff014f',
       },
       stroke:{
         strokColor: '#f2f2f2ff'
