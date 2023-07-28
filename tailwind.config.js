@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = [, "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 export default {
   content: [
     "./index.html",
@@ -22,6 +24,13 @@ export default {
       },
       stroke:{
         strokColor: '#f2f2f2ff'
+      },
+      borderColor:{
+        c1:"#FF008C",
+        c2:"#D309E1",
+        c3:"#9C1AFF",
+        c4:"#7700FF",
+        c5:"#4400FF",
       }
     },
   },

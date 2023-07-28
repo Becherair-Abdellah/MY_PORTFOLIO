@@ -1,6 +1,11 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
+
+// define "lord-icon" custom element with default properties
+defineElement(lottie.loadAnimation);
 const variants = {
   open: {
     y: 0,
@@ -19,19 +24,17 @@ const variants = {
 };
 
 export const MenuItem = ( {i} ) => {
-  const {nameEle,topath} = i;
-
+  const {nameEle,topath,color,icon} = i;
+  // const style = `border-[${color}]`
   return (
-    <motion.li
+    <motion.li className={color}
       variants={variants}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className="icon-placeholder">
-        {/* put your icon here */}
-      </div>
       <Link to={topath}>
       <div className="text-placeholder">
+        {icon}
       {nameEle}
       </div>
       </Link>

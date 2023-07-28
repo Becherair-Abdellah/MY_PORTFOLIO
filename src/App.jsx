@@ -8,9 +8,11 @@ import Blog from './components/blog/Blog'
 import { Routes,Route } from 'react-router-dom'
 import { Example } from './menuBar/Example'
 import './menuBar/style.css'
+
 function App() {
   return (
 <>
+
 <Example/>
     <Routes>
 
