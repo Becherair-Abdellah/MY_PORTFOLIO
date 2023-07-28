@@ -7,7 +7,7 @@ body {
     @apply font-ubuntu w-screen h-screen overflow-hidden p-0 m-0 bg-mainColor overflow-x-hidden overflow-y-visible;
 }
 nav {
-    @apply fixed top-0 left-0 bottom-0 w-0 sm:w-full sm:relative sm:p-5 sm:flex sm:h-[70px] sm:items-center sm:justify-between sm:select-none !important;
+    @apply fixed top-0 left-0 bottom-0 sm:bottom-[80%] w-0 sm:w-full sm:p-5 sm:flex sm:items-center sm:justify-between sm:select-none;
 }
 
 .background {
