@@ -4,8 +4,6 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import Author from "./Author";
-
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -37,8 +35,7 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
-      <span className="overlay fixed w-full h-[60px] bg-mainColor"></span>
-      <Author name={'Abdellah'} />
+      <span className="sm:hidden w-full h-[60px] bg-mainColor bg-red-800 fixed left-0 right-0" ></span>
       <motion.div className="background" variants={sidebar} />
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />

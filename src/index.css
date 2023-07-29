@@ -7,7 +7,7 @@ body {
     @apply font-ubuntu w-screen h-screen overflow-hidden p-0 m-0 bg-mainColor overflow-x-hidden overflow-y-visible;
 }
 nav {
-    @apply fixed top-0 left-0 bottom-0 sm:bottom-[80%] w-0 sm:w-full sm:p-5 sm:flex sm:items-center sm:justify-between sm:select-none;
+    @apply fixed top-0 left-0 bottom-0 sm:bottom-[90%] w-0 sm:w-full sm:p-5 sm:flex sm:items-center sm:justify-between sm:select-none sm:bg-mainColor;
 }
 
 .background {
@@ -31,7 +31,7 @@ li {
     @apply list-none mb-[20px] flex items-center cursor-pointer justify-center w-[85%] sm:w-fit mx-auto border rounded-md p-0 sm:opacity-[1] sm:translate-x-0 sm:translate-y-0 sm:m-0 sm:border-0 sm:hover:text-TextredColor sm:duration-300 !important;
 }
 li a{
-    @apply w-full p-[10px];
+    @apply w-full ;
 }
 .text-placeholder{
     @apply flex items-center justify-start gap-[10px] w-full sm:block sm:h-fit;
