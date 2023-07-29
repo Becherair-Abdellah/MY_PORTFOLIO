@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 
@@ -23,21 +23,20 @@ const variants = {
   }
 };
 
-export const MenuItem = ( {i} ) => {
+export const MenuItem = ( {i,toggle} ) => {
   const {nameEle,topath,color,icon} = i;
-  // const style = `border-[${color}]`
   return (
-    <motion.li className={color}
+    <motion.li onClick={toggle} className={color}
       variants={variants}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link to={topath}>
+      <NavLink to={topath}>
       <div className="text-placeholder">
         {icon}
       {nameEle}
       </div>
-      </Link>
+      </NavLink>
     </motion.li>
   );
 };

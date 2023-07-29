@@ -15,13 +15,15 @@ x:-200
   }
 };
 
-export const Navigation = () => (
-  <motion.ul variants={variants} initial={{x:0}}>
+export const Navigation = ({toggle}) => {
+  return(
+    <motion.ul variants={variants} initial={{x:0}}>
     {itemIds.map((ele, i) => (
-      <MenuItem  i={ele}  key={i} />
-    ))}
+      <MenuItem  i={ele}  key={i} toggle={toggle} />
+      ))}
   </motion.ul>
 );
+}
 const arrIcon = [<lord-icon
   src="https://cdn.lordicon.com/kxoxiwrf.json"
   trigger="loop"

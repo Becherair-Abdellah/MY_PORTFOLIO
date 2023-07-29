@@ -35,9 +35,9 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
-      <span className="sm:hidden w-full h-[60px] bg-mainColor bg-red-800 fixed left-0 right-0" ></span>
+      <span className="sm:hidden w-full h-[60px] bg-mainColor  fixed left-0 right-0" ></span>
       <motion.div className="background" variants={sidebar} />
-      <Navigation />
+      <Navigation toggle={()=>toggleOpen()} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

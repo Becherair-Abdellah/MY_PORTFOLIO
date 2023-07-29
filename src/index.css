@@ -30,6 +30,9 @@ ul {
 li {
     @apply list-none mb-[20px] flex items-center cursor-pointer justify-center w-[85%] sm:w-fit mx-auto border rounded-md p-0 sm:opacity-[1] sm:translate-x-0 sm:translate-y-0 sm:m-0 sm:border-0 sm:hover:text-TextredColor sm:duration-300 !important;
 }
+a.active{
+    @apply sm:text-TextredColor;
+}
 li a{
     @apply w-full ;
 }
