@@ -26,7 +26,7 @@ export default {
       stroke:{
         strokColor: '#f2f2f2ff'
       },
-      borderColor:{
+      colors:{
         c1:"#FF008C",
         c2:"#D309E1",
         c3:"#9C1AFF",

@@ -11,7 +11,7 @@ nav {
 }
 
 .background {
-    @apply absolute top-0 left-0 bottom-0 w-[200px] sm:hidden bg-gray-900
+    @apply absolute top-0 left-0 bottom-0 w-[200px] sm:hidden bg-[#252525]
 }
 
 button {
