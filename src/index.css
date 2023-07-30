@@ -4,14 +4,14 @@
 @tailwind utilities;
 
 body {
-    @apply font-ubuntu w-screen h-screen overflow-hidden p-0 m-0 bg-mainColor overflow-x-hidden overflow-y-visible;
+    @apply font-ubuntu h-screen overflow-hidden p-0 m-0 bg-mainColor overflow-x-hidden overflow-y-visible;
 }
 nav {
     @apply fixed top-0 left-0 bottom-0 sm:bottom-[90%] w-0 sm:w-full sm:p-5 sm:flex sm:items-center sm:justify-between sm:select-none sm:bg-mainColor;
 }
 
 .background {
-    @apply absolute top-0 left-0 bottom-0 w-[200px] sm:hidden bg-[#252525]
+    @apply absolute top-0 left-0 bottom-0 w-[200px] sm:hidden bg-BGmenu
 }
 
 button {

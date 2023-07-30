@@ -18,6 +18,7 @@ export default {
         redColor: '#ff014f',
         otherColor: '#00dd8eff',
         BgTextColor: '#f2f2f2ff',
+        BGmenu: '#252525',
       },
       textColor:{
         TextColor: '#f2f2f2ff',

@@ -14,7 +14,7 @@ function App() {
 <>
 
 <Example/>
-<div className='mainpage mt-16 mb-16 h-[100vh] sm:mt-[80px]'>
+<div className='mainpage mt-16 mb-16 h-[100vh] sm:mt-[100px]'>
 <Routes>
     <Route exact path='/' element={<Home/>} />
     <Route exact path='/about' element={<About/>} />
