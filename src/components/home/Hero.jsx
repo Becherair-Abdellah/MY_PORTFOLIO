@@ -27,7 +27,7 @@ function Hero() {
           <FaTwitterSquare size={25} className='text-TextColor cursor-pointer' />
         </div>
       </div>
-      <div className='mt-14 md:m-0 relative'>
+      <div className='mt-14 md:m-0 relative z-[-1]'>
         <img className='z-[-1]' src={IMG} alt="" />
       </div>
     </div>

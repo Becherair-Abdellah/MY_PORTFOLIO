@@ -42,3 +42,9 @@ li a{
 lord-icon{
     @apply sm:hidden
 }
+@media (min-width:992px){
+    .gr{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
