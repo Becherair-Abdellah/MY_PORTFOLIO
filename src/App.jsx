@@ -1,7 +1,7 @@
 import React from 'react'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+// import Footer from './components/footer/Footer'
 import Home from './components/home/Home'
 import Projects from './components/projects/Projects'
 import Blog from './components/blog/Blog'

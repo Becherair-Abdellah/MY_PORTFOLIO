@@ -48,3 +48,7 @@ lord-icon{
         grid-template-columns: 50% 50%;
     }
 }
+.bg-gr{
+    background: linear-gradient(45deg ,#333333ff ,rgb(60, 60, 60) ,#ff014f 70% );
+
+}

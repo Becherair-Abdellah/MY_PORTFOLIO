@@ -3,10 +3,11 @@ import BoxWork from './BoxWork'
 import { BiLogoZoom } from 'react-icons/bi'
 import {BsFillFileEarmarkCodeFill} from 'react-icons/bs'
 import {AiOutlineApi} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 function Work() {
   return (
     <div className='p-[2rem]'>
-      <h1 className='text-5xl leading-[4rem] font-semibold text-TextredColor mb-8' >How do I do my work?</h1>
+      <h1 className='text-5xl leading-[4rem] mb- font-semibold text-TextredColor mb-[15rem]' >How do I do my work?</h1>
       <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         <BoxWork color='#D309E1' title='Meeting with UI/UX Designer' icon={<BiLogoZoom color='#f2f2f2ff' size={50}/>} text='Conversing with a UI/UX Designer About Feasibility of Design, What Can Be Accomplished, What Can Be Eliminated, and Factors Affecting Product Performance'/>
 
@@ -16,6 +17,11 @@ function Work() {
 
 
       </div>
+      <div className="text-white text-center py-5 text-lg ">
+     <Link to='blog' className='hover:text-TextredColor duration-300' >
+       learn More
+     </Link>
+   </div>
     </div>
   )
 }
