@@ -2,9 +2,9 @@ import React from 'react'
 
 function Quot() {
   return (
-    <div>
+    <quot>
       Quot
-    </div>
+    </quot>
   )
 }
 

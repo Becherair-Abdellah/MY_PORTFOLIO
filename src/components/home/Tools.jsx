@@ -4,12 +4,11 @@ import {FaHtml5,FaNpm,FaCss3Alt,FaReact} from 'react-icons/fa'
 import {SiTailwindcss,SiRedux,SiNextdotjs,SiEleventy,SiSwiper,SiVisualstudiocode,SiPostman, SiJavascript} from 'react-icons/si'
 import {TbApi} from 'react-icons/tb'
 import {BsGit,BsGithub} from 'react-icons/bs'
-import { MdJavascript } from 'react-icons/md'
 import vite  from '../../assets/vite.svg';
 import chart from '../../assets/chartjs-logo.svg'
 function Tools() {
     return (    
-        <div className='gr'>
+        <div className='gr mt-5'>
       <div className='mb-10 p-[2rem]'>
       <div>
                 <h1 className='text-5xl leading-[4rem] font-semibold text-TextredColor mb-8'>Front-End Fusion: Tools and Techniques</h1>
