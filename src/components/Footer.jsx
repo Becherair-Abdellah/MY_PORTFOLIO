@@ -1,6 +1,4 @@
-import React from 'react'
 import SocialMedia from './home/SocialMedia'
-
 function Footer({year,name}) {
 
   return (
@@ -10,5 +8,4 @@ function Footer({year,name}) {
     </div>
   )
 }
-
 export default Footer
