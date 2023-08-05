@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Work() {
   return (
     <div className='p-[2rem]'>
-      <h1 className='text-5xl leading-[4rem] mb- font-semibold text-TextredColor mb-[15rem]' >How do I do my work?</h1>
+      <h1 className='text-5xl leading-[4rem] mb- font-semibold text-TextredColor mb-16' >How do I do my work?</h1>
       <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         <BoxWork color='#D309E1' title='Meeting with UI/UX Designer' icon={<BiLogoZoom color='#f2f2f2ff' size={50}/>} text='Conversing with a UI/UX Designer About Feasibility of Design, What Can Be Accomplished, What Can Be Eliminated, and Factors Affecting Product Performance'/>
 

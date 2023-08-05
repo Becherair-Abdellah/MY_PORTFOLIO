@@ -19,25 +19,25 @@ function Tools() {
       </div>
             <div className='flex justify-center flex-wrap gap-5 p-[2rem] relative z-[-1]'>
                 {/* framer motion  */}
-                <div className='text-white animate-bounce'><PiFramerLogoFill className='cursor-pointer' size={100}/></div>
+                <div className='text-white'><PiFramerLogoFill  className='xl:text-[100px] text-[50px]'/></div>
                 {/* html  */}
-                <div className='bg-r text-[#e44f26ff] animate-pulse'><FaHtml5 size={100}/></div>
-                <div className='text-[#1172b8ff] animate-pulse'><FaCss3Alt size={100}/></div>
-                <div className='text-[#00d8ffff]'><FaReact size={100}/></div>
-                <div className='text-[#44a8b3ff] animate-bounce'><SiTailwindcss size={100}/></div>
-                <div className='text-red-800 animate-pulse'><FaNpm size={100}/></div>
-                <div className='text-[#e44f26ff] animate-pulse'><BsGit size={100}/></div>
-                <div className='text-white animate-pulse'><BsGithub size={100}/></div>
-                <div className='text-white'><SiNextdotjs size={100}/></div>
-                <div className='text-[#764abc] animate-pulse'><SiRedux size={100}/></div>
-                <div className='text-white'><SiEleventy size={100}/></div>
-                <div className='text-white animate-pulse'><TbApi size={100}/></div>
-                <div className='text-[#0080ff] animate-pulse'><SiSwiper size={100}/></div>
-                <div className='text-[#0080ff] animate-bounce'><SiVisualstudiocode size={100}/></div>
-                <div><SiJavascript size={100} className='text-[#ffca28ff]'/></div>
-                <div className='text-[#e44f26ff] animate-pulse'><SiPostman size={100}/></div>
-                <div><img className='w-[100px]' src={vite} alt="" /></div>
-                <div><img className='w-[120px] animate-pusle' src={chart} alt="" /></div>
+                <div className='bg-r text-[#e44f26ff]'><FaHtml5 className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#1172b8ff] '><FaCss3Alt className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#00d8ffff]'><FaReact className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#44a8b3ff]'><SiTailwindcss className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-red-800'><FaNpm className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#e44f26ff]'><BsGit className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-white '><BsGithub className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-white'><SiNextdotjs className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#764abc]'><SiRedux className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-white'><SiEleventy className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-white '><TbApi className='xl:text-[100px] text-[50px]'/></div>
+                <div className='text-[#0080ff]'><SiSwiper className='xl:text-[100px] text-[50px]'/></div>
+                <div className='xl:text-[100px] text-[50px] text-[#0080ff]'><SiVisualstudiocode size={50}/></div>
+                <div><SiJavascript className='text-[#ffca28ff] xl:text-[100px] text-[50px]' /></div>
+                <div className='text-[#e44f26ff]'><SiPostman className='xl:text-[100px] text-[50px]'/></div>
+                <div><img className='xl:w-[100px] w-[50px]' src={vite} alt="" /></div>
+                <div><img className='xl:w-[100px] w-[50px]' src={chart} alt="" /></div>
             </div>
         </div>
     )
