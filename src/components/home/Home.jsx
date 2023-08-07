@@ -5,14 +5,14 @@ import Work from './Work'
 import Quot from './Quot'
 import Footer from '../Footer'
 function Home() {
-  const currentYear = new Date().getFullYear();
+  
   return (
     <div>
       <Hero/>
       <Tools/>
       <Work/>
       <Quot/>
-      <Footer year={currentYear} name='Abdellah'/>
+      <Footer/>
     </div>
   )
 }

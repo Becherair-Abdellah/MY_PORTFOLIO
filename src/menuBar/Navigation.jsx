@@ -17,7 +17,7 @@ x:-200
 
 export const Navigation = ({toggle}) => {
   return(
-    <motion.ul variants={variants} initial={{x:0}}>
+    <motion.ul variants={variants} initial={{x:'-100%'}}>
     {itemIds.map((ele, i) => (
       <MenuItem  i={ele}  key={i} toggle={toggle} />
       ))}
