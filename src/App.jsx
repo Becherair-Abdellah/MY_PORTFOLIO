@@ -7,6 +7,7 @@ import Projects from './components/projects/Projects'
 import Blog from './components/blog/Blog'
 import { Routes,Route } from 'react-router-dom'
 import { Example } from './menuBar/Example'
+import Article from './components/blog/Article'
 import './menuBar/style.css'
 
 function App() {
@@ -20,8 +21,10 @@ function App() {
     <Route exact path='/about' element={<About/>} />
     <Route exact path='/contact' element={<Contact/>} />
     <Route exact path='/projects' element={<Projects/>} />
-    <Route exact path='/blog' element={<Blog/>} />
-    <Route exact path='/*' element={<h1>Not Found !!</h1>} />
+    <Route exact path='/blog' element={<Blog/>}/>
+    <Route path='/articles/:id' element={<Article />}/>
+   
+    <Route exact path='/*' />
     </Routes>
 </div>
 </>

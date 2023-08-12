@@ -1,16 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link, Route, Routes } from 'react-router-dom'
 import img1 from '../../assets/img2.jpg'
-function Blog() {
+import BoxArticle from '../BoxArticle'
+import Footer from '../Footer'
+// import { getArticles } from './api'
+import axios from 'axios'
+ function Blog() {
+  const [articles,setArticle] = useState([]);
+  const getdata = async ()=>{
+    try{
+      let response = await axios.get("http://localhost:4350/articles");
+      setArticle(response.data);
+    }catch(e){
+      return e;
+    }
+  }
+  useEffect(()=>{
+    getdata();
+  },[]);
   return (
-    <div>
+    <div className=''>
       <h1 className='bg-gr text-white p-6 text-4xl text-center'>Blogs</h1>
-      <div className="blogs p-10 mt-10">
-        <div className="box duration-300 border p-4 relative rounded bg-gr-op cursor-pointer overflow-hidden">
-          <img src={img1} className='absolute rounded z-[-1] h-full w-full left-0 top-0 object-cover ' alt="" />
-          <h1 className='text-white font-semibold text-2xl mb-4'>Title of Article</h1>
-          <p className='text-white'>How to make Http request using react js without next js that mean you don need any packages of system design or put it some changes</p>
-        </div>
+      <div className="blogs p-10 mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
+        {articles.map((article,idx)=>{
+          return(
+            <Link to={`/articles/${article.id}`} key={idx}>
+              <BoxArticle title={article.id} text={article.title} srcimg={article.img}/>
+            </Link>
+          )
+        })}
       </div>
+      <Footer/>
     </div>
   )
 }
