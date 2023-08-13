@@ -8,11 +8,14 @@ import Blog from './components/blog/Blog'
 import { Routes,Route } from 'react-router-dom'
 import { Example } from './menuBar/Example'
 import Article from './components/blog/Article'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 import './menuBar/style.css'
 
 function App() {
   return (
-<>
+<Provider store={store}>
+
 
 <Example/>
 <div className='mainpage mt-16 mb-16 h-[100vh] sm:mt-[100px]'>
@@ -27,9 +30,8 @@ function App() {
     <Route exact path='/*' />
     </Routes>
 </div>
-</>
-
-  )
+</Provider>
+)
 }
 
 export default App

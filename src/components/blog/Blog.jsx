@@ -5,7 +5,10 @@ import BoxArticle from '../BoxArticle'
 import Footer from '../Footer'
 // import { getArticles } from './api'
 import axios from 'axios'
+import { useDispatch, useSelector } from 'react-redux'
+import { set_id } from '../../redux/Acions'
  function Blog() {
+  const dispatch = useDispatch();
   const [articles,setArticle] = useState([]);
   const getdata = async ()=>{
     try{
@@ -19,13 +22,16 @@ import axios from 'axios'
     getdata();
   },[]);
   return (
-    <div className=''>
-      <h1 className='bg-gr text-white p-6 text-4xl text-center'>Blogs</h1>
+    <div className='' >
+      <h1   className='bg-gr text-white p-6 text-4xl text-center'>Blogs</h1>
       <div className="blogs p-10 mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
         {articles.map((article,idx)=>{
           return(
-            <Link to={`/articles/${article.id}`} key={idx}>
-              <BoxArticle title={article.id} text={article.title} srcimg={article.img}/>
+            <Link to={`/articles/${article.id}`} key={idx} onClick={()=>{
+              dispatch(set_id(article.id));
+              localStorage.setItem("ID",JSON.stringify(article.id))
+              }}>
+              <BoxArticle title={article.title} text={article.descrp} srcimg={article.src} created={article.created}/>
             </Link>
           )
         })}
