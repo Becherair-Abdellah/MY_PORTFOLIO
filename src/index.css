@@ -63,8 +63,11 @@ lord-icon{
   @apply rotate-2 scale-[1.2] duration-300;
 }
 .bg_text{
-    background: linear-gradient(45deg ,#FF008C ,#ff1616 ,#dfdfdf );
+    background: linear-gradient(45deg ,#FF008C ,#ff1616 ,#ffffff );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+a.active svg{
+    @apply bg-white text-TextredColor rounded duration-300 ;
 }

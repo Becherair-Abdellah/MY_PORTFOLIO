@@ -10,7 +10,12 @@ import { Example } from './menuBar/Example'
 import Article from './components/blog/Article'
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import Login from './dashboard/Add_Article'
+import Signup from './dashboard/Add_Product'
 import './menuBar/style.css'
+import Add_Article from './dashboard/Add_Article'
+import Add_Product from './dashboard/Add_Product'
+import Dashboard from './dashboard/Dashboard'
 
 function App() {
   return (
@@ -25,6 +30,12 @@ function App() {
     <Route exact path='/contact' element={<Contact/>} />
     <Route exact path='/projects' element={<Projects/>} />
     <Route exact path='/blog' element={<Blog/>}/>
+    {/* <Route exact path='/login' element={<Login/>}/> */}
+    {/* <Route exact path='/signup' element={<Signup/>}/> */}
+
+        <Route exact path='/dashboard_04_01/*' element={<Dashboard/>}/>
+      
+
     <Route path='/articles/:id' element={<Article />}/>
    
     <Route exact path='/*' />
