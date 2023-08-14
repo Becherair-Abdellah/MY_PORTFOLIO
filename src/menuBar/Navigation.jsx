@@ -51,4 +51,4 @@ const arrIcon = [<lord-icon
     colors="primary:#4be1ec,secondary:#cb5eee"
     style={{width:"50px",height:"50px"}}>
 </lord-icon>]
-const itemIds = [{nameEle:'Home',topath:'/',color:'border-c1',icon:arrIcon[0]},{nameEle:'About',topath:'/about',color:'border-c2',icon:arrIcon[1]},{nameEle:'Projects',topath:'/projects',color:'border-c3',icon:arrIcon[2]},{nameEle:'My Bolg',topath:'/blog',color:'border-c4',icon:arrIcon[3]},{nameEle:'Contact',topath:'/contact',color:'border-c5',icon:arrIcon[4]}];
+const itemIds = [{nameEle:'Home',topath:'/',color:'border-c1',icon:arrIcon[0]},{nameEle:'About',topath:'about',color:'border-c2',icon:arrIcon[1]},{nameEle:'Projects',topath:'projects',color:'border-c3',icon:arrIcon[2]},{nameEle:'My Bolg',topath:'blog',color:'border-c4',icon:arrIcon[3]},{nameEle:'Contact',topath:'contact',color:'border-c5',icon:arrIcon[4]}];

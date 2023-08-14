@@ -33,7 +33,7 @@ function Tools() {
                 <div className='text-white'><SiEleventy className='xl:text-[100px] text-[50px]'/></div>
                 <div className='text-white '><TbApi className='xl:text-[100px] text-[50px]'/></div>
                 <div className='text-[#0080ff]'><SiSwiper className='xl:text-[100px] text-[50px]'/></div>
-                <div className='xl:text-[100px] text-[50px] text-[#0080ff]'><SiVisualstudiocode size={100}/></div>
+                <div className='xl:text-[100px] text-[50px] text-[#0080ff]'><SiVisualstudiocode size={100} className='text-[50px] xl:text-[100px]'/></div>
                 <div><SiJavascript className='text-[#ffca28ff] xl:text-[100px] text-[50px]' /></div>
                 <div className='text-[#e44f26ff]'><SiPostman className='xl:text-[100px] text-[50px]'/></div>
                 <div><img className='xl:w-[100px] w-[50px]' src={vite} alt="" /></div>

@@ -19,7 +19,7 @@ function Projects() {
     getdata();
   },[]);
   return (
-    <div className='' >
+    <>
       <h1   className='bg-gr text-white p-6 text-4xl text-center'>My Projects</h1>
       <div className="blogs p-10 mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
         {product.map((product,idx)=>{
@@ -31,7 +31,7 @@ function Projects() {
         })}
       </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 

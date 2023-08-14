@@ -64,7 +64,6 @@ lord-icon{
 .bg_text{
     background: linear-gradient(45deg ,#FF008C ,#ff1616 ,#ffffff );
     -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
 }
 a.active svg{
