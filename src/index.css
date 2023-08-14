@@ -50,7 +50,6 @@ lord-icon{
 }
 .bg-gr{
     background: linear-gradient(45deg ,#333333ff ,rgb(60, 60, 60) ,#ff014f );
-
 }
 .bg-gr-op{
     background: linear-gradient(45deg ,rgba(51, 51, 51, 0.792) ,rgba(60, 60, 60, 0.804) ,#ff014d9a );

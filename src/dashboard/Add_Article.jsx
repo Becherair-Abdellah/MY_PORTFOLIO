@@ -1,22 +1,20 @@
-import React from 'react'
-
-function Add_Article() {
-    document.body.classList.add('overflow-hidden')
+import React, { useState } from 'react'
+import axios from 'axios';
+function Add_Product() {  
   return (
-    <div className='top-0 h-screen z-[11] relative left-[12%] w-[88%] select-none'>
-        <div className='m-auto rounded-md'>
-        <div className=''>
-            <h1 className='bg_text text-3xl p-3 text-center text-white'>SignIn</h1>
-            <form className='text-center' action="">
-                <input className='p-1 outline-none rounded-md text-TextredColor' type="email" placeholder='email' />
-                <input className='p-1 outline-none rounded-md text-TextredColor mt-2' type="password" placeholder='password'/>
-                <span className='block mt-3 text-white cursor-pointer'>forget password ?</span>
-                <input className='text-white border p-1 px-2 rounded hover:bg-redColor cursor-pointer duration-300 mt-3' type='submit' value='login'/>
-            </form>
-        </div>
-        </div>
+    <div className='mb-4 top-0 h-full z-[11] relative xl:left-[12%] xl:w-[80%] select-none px-6'>
+      <form className='flex xl:w-[50%] mx-auto flex-col bg-[#ffffff0f] p-4 rounded-md' action="">
+      <label className='text-white text-xl mb-2 ' htmlFor="">Title</label>
+        <input type="text" placeholder='title of article' className='outline-none p-3 rounded-md text-white bg-[#ffffff24]' />
+        <label className='text-white text-xl my-2' htmlFor="">description</label>
+        <textarea type="text" placeholder='Article description' className='outline-none p-3 rounded-md text-white bg-[#ffffff24]' rows={10} />
+        <label className='text-white text-xl my-2' htmlFor="">Article</label>
+        <textarea rows={13} type="text" placeholder='your project' className='outline-none p-3  rounded-md text-white bg-[#ffffff24]' />
+        <input className='mt-4' type="file" placeholder='eeer'/>
+        <input className='text-white text-lg bg-gr mt-2 rounded-md cursor-pointer' type='submit' value='send' />
+      </form>
     </div>
   )
 }
 
-export default Add_Article
+export default Add_Product
