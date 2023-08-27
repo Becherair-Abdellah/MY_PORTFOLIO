@@ -17,11 +17,6 @@ function Work() {
 
 
       </div>
-      <div className="text-white text-center py-5 text-lg ">
-     <Link to='blog' className='hover:text-TextredColor duration-300' >
-       learn More
-     </Link>
-   </div>
     </div>
   )
 }

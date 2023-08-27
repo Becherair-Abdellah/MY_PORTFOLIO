@@ -37,41 +37,6 @@ function About() {
           </p>
           </div>
           <div className='xl:p-10'>
-          {/* my Information */}
-
-          <div>
-          <h1 className='text-TextredColor font-semibold text-4xl mb-5'>My Information</h1>
-          <div className='bg-gr mx-auto  lg:w-[70%] p-6'>
-            <h1 className='text-white font-semibold text-2xl'>Abdellah Becherair</h1>
-            <div className="mt-8">
-           <span className='text-TextColor text-[19px] lg:text-xl flex gap-4 items-center mb-3'>
-           <BsLinkedin size={25} className=' cursor-pointer' />
-           https://www.linkedin.com/in/abdellah-
-becherair-198825263/
-           </span>
-           <span className='text-TextColor text-xl flex gap-4 items-center mb-3'>
-           <BsGithub size={25} className=' cursor-pointer' />
-           https://github.com/Becherair-Abdellah
-           </span>
-
-           <span className='text-TextColor text-xl flex gap-4 items-center mb-3'>
-           <FaTwitterSquare size={25} className=' cursor-pointer' />
-           https://github.com/Becherair-Abdellah
-           </span>
-
-           <span className='text-TextColor text-xl flex gap-4 items-center mb-3'>
-           <IoLogoWhatsapp size={25} className=' cursor-pointer' />
-           +213 666364546
-           </span>
-
-           <span className='text-TextColor text-xl flex gap-4 items-center mb-3'>
-           <MdAlternateEmail size={25} className=' cursor-pointer' />
-           abdellah.becherair04@gmail.com
-           </span>
-
-            </div>
-          </div>
-          </div>
           
           <div className='bg-gr py-10 px-5  mt-8 text-center text-TextColor text-2xl leading-9 '>
           I write articles about what I do, and you can benefit from my expertise

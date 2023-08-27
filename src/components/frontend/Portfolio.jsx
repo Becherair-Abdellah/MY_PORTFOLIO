@@ -2,11 +2,10 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import Home from '../home/Home'
 import About from '../about/About'
-import Contact from '../Contact'
 import Projects from '../projects/Projects'
-import Blog from '../blog/Blog'
+// import Blog from '../blog/Blog'
 import { Example } from '../../menuBar/Example'
-import Article from '../blog/Article'
+// import Article from '../blog/Article'
 function Portfolio() {
   return (
     <>
@@ -15,10 +14,9 @@ function Portfolio() {
 <Routes>
     <Route exact path='/' element={<Home/>} />
     <Route exact path='/about' element={<About/>} />
-    <Route exact path='/contact' element={<Contact/>} />
     <Route exact path='/projects' element={<Projects/>} />
-    <Route exact path='/blog' element={<Blog/>}/>
-    <Route path='/articles/:id' element={<Article />}/>
+    {/* <Route exact path='/blog' element={<Blog/>}/> */}
+    {/* <Route path='/articles/:id' element={<Article />}/> */}
    
     </Routes>
 </div>
