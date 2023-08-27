@@ -40,7 +40,7 @@ function About() {
           
           <div className='bg-gr py-10 px-5  mt-8 text-center text-TextColor text-2xl leading-9 '>
           I write articles about what I do, and you can benefit from my expertise
-          <Link className='text-white hover:text-TextredColor duration-300 block text-lg mt-7 border-red-600' to='/blog'>read articles</Link>
+          <Link className='text-white hover:text-TextredColor duration-300 block text-lg mt-7 border-red-600' to='https://www.linkedin.com/in/abdellah-becherair-198825263/'>read articles</Link>
           </div>
           </div>
         </div>
