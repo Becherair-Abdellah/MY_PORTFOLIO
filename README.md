@@ -1,7 +1,11 @@
 # Abdellah Portfolio
 This repository contains the complete codebase and assets for my personal portfolio website. I built this portfolio from the ground up, covering both the user interface (UI) design and implementation. It serves as a showcase of my skills 
 
-## Pages Of Book Store
+## Pages Of Portfolio
+
+# naviagtion page
+
+![Books Store Screenshot](Screenshot from 2023-09-02 08-41-45.png)
 # Home Page 
 ![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-2023-09-02-08_40_06.png)
 
