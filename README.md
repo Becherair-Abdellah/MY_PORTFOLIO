@@ -8,6 +8,19 @@ This repository contains the complete codebase and assets for my personal portfo
 # About Page 
 ![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-about-2023-09-02-08_40_21.png)
 
+# Projects Page
+
+![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-projects-2023-09-02-08_40_35.png)
+
+# Home Page for mobile
+![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-2023-09-02-08_40_06.png)
+
+# About Page for mobile
+![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-about-2023-09-02-08_40_21.png)
+
+# Projects Page for mobile
+
+![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-projects-2023-09-02-08_40_35.png)
 
 ## Table of Contents
 
