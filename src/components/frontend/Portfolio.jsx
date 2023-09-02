@@ -12,7 +12,7 @@ function Portfolio() {
       <Example/>
 <div className='mainpage mt-16 mb-16 h-[100vh] sm:mt-[100px]'>
 <Routes>
-    <Route exact path='/' element={<Home/>} />
+    <Route exact path='/MY_PORTFOLIO' element={<Home/>} />
     <Route exact path='/about' element={<About/>} />
     <Route exact path='/projects' element={<Projects/>} />
     {/* <Route exact path='/blog' element={<Blog/>}/> */}
