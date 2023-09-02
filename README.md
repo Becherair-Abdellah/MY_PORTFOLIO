@@ -5,7 +5,7 @@ This repository contains the complete codebase and assets for my personal portfo
 
 # naviagtion page
 
-![Books Store Screenshot](Screenshot from 2023-09-02 08-41-45.png)
+![Books Store Screenshot](nav.png)
 # Home Page 
 ![Books Store Screenshot](screencapture-becherair-abdellah-github-io-MY-PORTFOLIO-2023-09-02-08_40_06.png)
 
