@@ -1,7 +1,25 @@
-# React + Vite
+# Abdellah Portfolio
+This repository contains the complete codebase and assets for my personal portfolio website. I built this portfolio from the ground up, covering both the user interface (UI) design and implementation. It serves as a showcase of my skills 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pages Of Book Store
+# SignIn Page  
+![Books Store Screenshot](svgs/signin.png)
 
-Currently, two official plugins are available:
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# SignUp Page  
+![Books Store Screenshot](svgs/signup.png)
+
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [UI Components](#ui-components)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Responsive Design](#responsive-design)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+- ## Installation
