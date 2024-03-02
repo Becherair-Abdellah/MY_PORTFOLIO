@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes,Route } from 'react-router-dom'
+import { Routes,Route, Outlet } from 'react-router-dom'
 import Home from '../home/Home'
 import About from '../about/About'
 import Projects from '../projects/Projects'
@@ -11,14 +11,8 @@ function Portfolio() {
     <>
       <Example/>
 <div className='mainpage mt-16 mb-16 h-[100vh] sm:mt-[100px]'>
-<Routes>
-    <Route exact path='/MY_PORTFOLIO/home' element={<Home/>} />
-    <Route exact path='/MY_PORTFOLIO/about' element={<About/>} />
-    <Route exact path='/MY_PORTFOLIO/projects' element={<Projects/>} />
-    {/* <Route exact path='/blog' element={<Blog/>}/> */}
-    {/* <Route path='/articles/:id' element={<Article />}/> */}
-   
-    </Routes>
+  <Outlet/>
+
 </div>
     </>
   )
