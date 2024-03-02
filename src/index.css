@@ -23,18 +23,14 @@ button {
 }
 
 ul {
-    @apply p-[0] absolute top-[100px] w-[200px] sm:w-full sm:relative text-white text-center text-[20px] sm:top-0 sm:left-0 sm:translate-x-0 sm:translate-y-0 
-    sm:flex sm:justify-center sm:gap-5 !important
-}
-
-li {
-    @apply list-none mb-[20px] flex items-center cursor-pointer justify-center w-[85%] sm:w-fit mx-auto border rounded-md p-0 sm:opacity-[1] sm:translate-x-0 sm:translate-y-0 sm:m-0 sm:border-0 sm:hover:text-TextredColor sm:duration-300 !important;
+    /* @apply p-[0] absolute top-[100px] w-[200px] sm:w-full sm:relative text-white text-center text-[20px] sm:top-0 sm:left-0 sm:translate-x-0 sm:translate-y-0 
+    sm:flex sm:justify-center sm:gap-5 !important */
 }
 a.active{
     @apply sm:text-TextredColor;
 }
 li a{
-    @apply w-full ;
+    @apply w-full  hover:text-TextredColor duration-200 ;
 }
 .text-placeholder{
     @apply flex items-center justify-start gap-[10px] w-full sm:block sm:h-fit;
@@ -67,5 +63,5 @@ lord-icon{
     color: transparent;
 }
 a.active svg{
-    @apply bg-white text-TextredColor rounded duration-300 ;
+    @apply  text-TextredColor rounded duration-300 ;
 }

@@ -29,7 +29,7 @@ export const Example = () => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   return (
-    <motion.nav
+    <motion.nav className="hidden"
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}
