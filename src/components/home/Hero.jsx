@@ -9,7 +9,7 @@ import {LiaCircle,LiaSquare} from 'react-icons/lia'
 import SocialMedia from './SocialMedia'
 function Hero() {
   return (
-    <div className='md:grid lg:grid-cols-2'>
+    <div className='md:grid lg:grid-cols-2 border-b-2 pb-[4rem] md:pb-[8rem] '>
       <div className=''>
         <h1 className='text-white text-3xl mb-4 md:text-3xl'>Hi, I'm</h1>
         <h1 className='text-5xl leading-[3.5rem] font-semibold text-TextredColor mb-8 md:text-8xl'>ABDELLAH BECHERAIR</h1>

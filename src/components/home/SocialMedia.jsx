@@ -5,7 +5,7 @@ import { FaTwitterSquare } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 function SocialMedia() {
   return (
-    <div className='flex mt-8 w-fit items-center gap-3' >
+    <div className='flex mt-8 items-center gap-3 w-full' >
       <Link to="https://www.linkedin.com/in/abdellah-becherair-198825263/">
         <BsLinkedin size={40} className='text-TextColor cursor-pointer' />
       </Link>

@@ -12,9 +12,6 @@ function Home() {
       <Navbar/>
       <Hero/>
       <Tools/>
-      <Work/>
-      <Quot/>
-      <Footer/>
     </div>
   )
 }

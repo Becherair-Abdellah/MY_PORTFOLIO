@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import Dashboard from './dashboard/Dashboard'
 import Portfolio from './components/frontend/Portfolio'
+import Footer from './components/Footer'
 // import Login from './dashboard/Login'
 // import ResetPassword from './dashboard/ResetPassword' 
 function App() {
@@ -15,6 +16,9 @@ function App() {
     </div>
  <div className='md:w-[85%] mx-auto mt-2 md:mt-6 p-3'>
  <Outlet/>
+ </div>
+ <div className='w-full bg-[#262626]  '>
+ <Footer/>
  </div>
  </>
 )
