@@ -7,18 +7,18 @@ function SocialMedia() {
   return (
     <div className='flex mt-8 w-fit items-center gap-3' >
       <Link to="https://www.linkedin.com/in/abdellah-becherair-198825263/">
-        <BsLinkedin size={25} className='text-TextColor cursor-pointer' />
+        <BsLinkedin size={40} className='text-TextColor cursor-pointer' />
       </Link>
       <Link to="mailto:abdellah.becherair04@gmail.com">
-        <MdAlternateEmail size={25} className='text-TextColor cursor-pointer' />
+        <MdAlternateEmail size={40} className='text-TextColor cursor-pointer' />
       </Link>
 
       <Link to="https://github.com/Becherair-Abdellah" >
-        <BsGithub size={25} className='text-TextColor cursor-pointer' />
+        <BsGithub size={40} className='text-TextColor cursor-pointer' />
       </Link>
 
       <Link to="https://twitter.com/AbdellahBecher">
-        <FaTwitterSquare size={25} className='text-TextColor cursor-pointer' />
+        <FaTwitterSquare size={40} className='text-TextColor cursor-pointer' />
       </Link>
     </div>
   )

@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif']
+        
       },
       backgroundColor: {
         mainColor: '#333333ff',

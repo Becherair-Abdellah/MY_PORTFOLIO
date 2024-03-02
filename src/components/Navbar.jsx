@@ -5,14 +5,16 @@ import { IoHome } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
 function Navbar() {
     const [aside,setAside] = useState(true);
-
+    const setDark = ()=>{
+        document.querySelector('html').classList.toggle('dark');
+    }
   return (
     <>
-    <nav className=" border-gray-200 relative w-full p-2 md:p-6">
+    <nav className=" border-gray-200 relative w-full mb-[4rem] p-0">
      
      {/* button open link  */}
      <div className={`flex justify-between items-center w-full text-white`}>
-     <ul className={`${aside && 'hidden'} font-medium fixed h-screen md:h-full bg-gray-800 md:bg-transparent md:relative left-0 w-[300px] md:w-full top-0 flex-col md:flex-row md:flex gap-8 text-2xl px-7 py-8 md:px-0 md:py-0 `}>
+     <ul className={`${aside && 'hidden'} font-medium fixed h-screen md:h-full bg-[#222] md:bg-transparent md:relative left-0 w-[300px] md:w-full top-0 flex-col md:flex-row md:flex gap-8 text-2xl px-7 py-8 md:px-0 md:py-0 `}>
          <div className='md:hidden mb-8'>
              <MdClose size={35} color='white' className='cursor-pointer' onClick={()=>{
                 setAside(true);
@@ -50,7 +52,9 @@ function Navbar() {
          <h1 className='text-xl font-bold text-white md:hidden'>Abdellah Becherair</h1>
          {/* dark mode  */}
          <div >
-             <MdOutlineDarkMode  size={30} className='cursor-pointer'/>
+             <MdOutlineDarkMode  size={30} className='cursor-pointer' onClick={()=>{
+                setDark();
+             }}/>
          </div>
          {/* aside bar  */}
          
