@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SocialMedia from "./home/SocialMedia";
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,12 +9,11 @@ function Footer() {
         <div className="flex-1 ">
           <h1 className="text-2xl mb-5">Links</h1>
           <ul>
-            <li ><a href="/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</a></li>
-            <li ><a href="/talks" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Talks</a></li>
-            <li ><a href="/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</a></li>
-            <li ><a href="/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</a></li>
-            <li ><a href="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</a></li>
-            <li ><a href="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</a></li>
+            <li ><Link to="/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
+            <li ><Link to="/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
+            <li ><Link to="/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
+            <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
+            <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li>
           </ul>
         </div>
         <div className="w-fit  mb-5 flex-1 mt-10  md:mt-0">
@@ -24,57 +24,57 @@ function Footer() {
         <div className="mt-8 md:mt-0">
         <h1 className="text-2xl mb-5">Tags</h1>
         <div className="flex flex-1 gap-2 w-[300px] flex-wrap mt-4">
-          <a
+        <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Life
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             HTML+CSS
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Next
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             JavaScript
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Tailwind
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Docker
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Git
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             React
           </a>
           <a
             href=""
-            className="bg-gray-600 px-4 py-1 rounded-xl hover:text-red-600"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             APIs
           </a>

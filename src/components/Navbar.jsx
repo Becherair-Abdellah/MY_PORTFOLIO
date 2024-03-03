@@ -28,9 +28,6 @@ function Navbar() {
            <a href="#" className="" aria-current="page">Blog</a>
          </li>
          <li className='p-3 md:p-0'>
-           <a href="#" className="" aria-current="page">Talks</a>
-         </li>
-         <li className='p-3 md:p-0'>
            <a href="#" className="" aria-current="page">Contact</a>
          </li>
          <li className='p-3 md:p-0'>

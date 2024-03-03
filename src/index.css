@@ -65,3 +65,6 @@ lord-icon{
 a.active svg{
     @apply  text-TextredColor rounded duration-300 ;
 }
+.ho:hover h1{
+    @apply text-TextredColor duration-300
+}
