@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom"
 import App from "./App"
-import Home from "./components/home/Home"
-import Blog from "./components/blog/Blog"
+import Home from "./components/Home"
+import Blog from "./components/Blog"
 import Contact from "./components/Contact"
-import About from "./components/about/About"
-import Article from "./components/blog/Article"
+import About from "./components/About"
+import Article from "./components/Article"
 {/* <Routes>
     <Route exact path='/MY_PORTFOLIO/home' element={<Home/>} />
     <Route exact path='/MY_PORTFOLIO/about' element={<About/>} />

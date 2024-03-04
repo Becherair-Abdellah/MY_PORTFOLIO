@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
+import { Link } from 'react-router-dom';
 function Navbar() {
     const [aside,setAside] = useState(true);
     const setDark = ()=>{
@@ -22,19 +23,29 @@ function Navbar() {
          </div>
 
          <li className='p-3 md:p-0'>
-           <a href="#" className="active" aria-current="page"><span className='md:hidden'>Home</span><IoHome size={35} className='hidden md:block'/></a>
+           <Link to="/" className="active" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}><span className='md:hidden'>Home</span><IoHome size={35} className='hidden md:block'/></Link>
          </li>
          <li className='p-3 md:p-0'>
-           <a href="#" className="" aria-current="page">Blog</a>
+           <Link to="/blog" className="" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}>Blog</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <a href="#" className="" aria-current="page">Contact</a>
+           <Link to="/contact" className="" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}>Contact</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <a href="#" className="" aria-current="page">About</a>
+           <Link to="/about" className="" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}>About</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <a href="#" className="" aria-current="page">Main Product</a>
+           <Link to="/mainproduct" className="" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}>Main Product</Link>
          </li>
 
 

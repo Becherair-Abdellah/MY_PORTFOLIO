@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import img from "../../assets/p2.jpg";
+import img from "../assets/p2.jpg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaTwitterSquare } from "react-icons/fa";
-import Footer from "../Footer";
-import SocialMedia from "../home/SocialMedia";
-import Img from "../../assets/profile.jpg";
+import Footer from "./Footer";
+import SocialMedia from "./SocialMedia";
+import Img from "../assets/profile.jpg";
 function About() {
   return (
     <>

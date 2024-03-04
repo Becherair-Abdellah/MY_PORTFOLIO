@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SocialMedia from "./home/SocialMedia";
+import SocialMedia from "./SocialMedia";
 function Footer() {
   const currentYear = new Date().getFullYear();
   const name = "Abdellah";

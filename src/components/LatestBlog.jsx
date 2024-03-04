@@ -1,5 +1,5 @@
 import React from 'react'
-import BoxArticle from '../BoxArticle'
+import BoxArticle from './BoxArticle'
 import { Link } from 'react-router-dom'
 function LatestBlogPosts() {
   return (

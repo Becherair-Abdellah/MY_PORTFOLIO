@@ -13,8 +13,8 @@ import {
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { BsGit, BsGithub } from "react-icons/bs";
-import vite from "../../assets/vite.svg";
-import chart from "../../assets/chartjs-logo.svg";
+import vite from "../assets/vite.svg";
+import chart from "../assets/chartjs-logo.svg";
 function Tools() {
   return (
     <div className=" mt-[6rem] border-b-2 pb-[4rem] md:pb-[8rem]">

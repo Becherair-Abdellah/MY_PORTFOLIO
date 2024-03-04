@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { set_id } from "../../redux/Acions";
-import Footer from "../Footer";
-import axios from "axios";
 function Article() {
   return (
     <>

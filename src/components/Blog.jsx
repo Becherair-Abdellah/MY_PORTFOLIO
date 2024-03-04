@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 // import img1 from '../../assets/img2.jpg'
-import BoxArticle from "../BoxArticle";
+import BoxArticle from "./BoxArticle";
 function Blog() {
   return (
     <>
@@ -93,7 +93,6 @@ function Blog() {
           />
         </div>
       </div>
-      <Outlet/>
     </>
   );
 }
