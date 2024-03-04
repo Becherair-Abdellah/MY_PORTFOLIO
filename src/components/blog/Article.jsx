@@ -1,44 +1,57 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
-import { set_id } from '../../redux/Acions';
-import Footer from '../Footer'
-import axios from 'axios'
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { set_id } from "../../redux/Acions";
+import Footer from "../Footer";
+import axios from "axios";
 function Article() {
-    // const id = 2;
-    // const Id = useSelector(({id})=>id);
-    const dispatch = useDispatch();
-    if(localStorage.getItem("ID")){
-      const Idx = JSON.parse(localStorage.getItem("ID"));
-     dispatch(set_id(Idx))
-      
-    }
-  const Id = useSelector(({id})=>id);
-    const [article,setArticle] = useState({});
-    const getdata = async ()=>{
-        try{
-          let response = await axios.get(`http://localhost:4350/articles/${Id}`);
-          setArticle(response.data);
-        }catch(e){
-            console.error(e);
-          
-        }
-      }
-    useEffect(()=>{
-        getdata();
-    },[])
   return (
-    <div>
-     <div className='p-3'>
-        <img className='rounded md:w-[400px] mb-4 float-left mr-7' src={article.src} alt="" />
-      <div className='p-3'>
-      <h1 className='text-4xl bg_text'>{article.title}</h1>
-      <p className='text-white  block mt-6 leading-[1.8rem]'>{article.body}</p>
+    <>
+      <div
+        class="top-container border-b-2 mb-10 md:mb-14"
+        data-astro-cid-wu5dj4rx=""
+      >
+        <main
+          class="flex px-0 flex-col-reverse md:flex-row md:-my-10 md:my-0 md:flex-row"
+          data-astro-cid-wu5dj4rx=""
+        >
+          {/* <div
+            id="page-header-content"
+            class="md:w-9/12 pr-0 md:pr-5"
+            data-astro-cid-wu5dj4rx=""
+          >
+            <h1
+              class="text-4xl md:text-5xl leading-snug md:leading-snug mt-10 md:mt-5 font-bold text-center md:text-left"
+              data-astro-cid-bvzihdzo=""
+            >
+              How to Optimize the Web for the Worst User Conditions?
+            </h1>
+            <h2
+              class="post-date text-lg my-7 leading-10 flex flex-col-reverse md:flex-row items-center md:items-start md:gap-3"
+              data-astro-cid-bvzihdzo=""
+            >
+              <a
+                href="/blog/performance"
+                class="capsule leading-9"
+                data-astro-cid-53hm25xo=""
+              >
+                <div class=" gap-2 inline-flex" data-astro-cid-53hm25xo="">
+                  <div class="label" data-astro-cid-53hm25xo="">
+                    Performance
+                  </div>
+                </div>
+              </a>
+              <div class="flex gap-3" data-astro-cid-bvzihdzo="">
+                <time datetime="2024-02-21T00:00:00.000Z">21 Feb 2024</time> •{" "}
+                <span data-astro-cid-bvzihdzo="">10 min read</span>
+              </div>
+            </h2>
+          </div> */}
+          <h1 className="text-white text-2xl text-center w-full py-10">No Articles Here</h1>
+        </main>
       </div>
-     </div>
-<Footer/>
-    </div>
-  )
+    </>
+  );
 }
 
-export default Article
+export default Article;
