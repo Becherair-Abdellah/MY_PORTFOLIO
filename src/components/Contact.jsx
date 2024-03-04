@@ -15,14 +15,14 @@ or send me a message directly on <a href="https://www.linkedin.com/in/abdellahbe
 {/* more info  */}
 
 <main class=" mt-[5rem]" ><div class="contact-container flex flex-col gap-16" ><section><h3 class="text-2xl lg:text-4xl pb-3 text-red-600 font-bold" >Speaking</h3><p className='text-white md:text-2xl text-lg md:leading-[3rem]'>
-I give talks in different a lot of events in any locations, if you want me to speak at your event please send email: <strong ><a href="mailto:abdellah.becherair04@gmail.com" className='text-red-600' >abdellah.becherair04@gmail.com</a></strong></p><p className='text-white md:text-2xl mt-[2rem] text-lg md:leading-[3rem]' >
+I love giving talks in different a lot of events in any locations, if you want me to speak at your event please send email: <strong ><a href="mailto:abdellah.becherair04@gmail.com" className='text-red-600' >abdellah.becherair04@gmail.com</a></strong></p><p className='text-white md:text-2xl mt-[2rem] text-lg md:leading-[3rem]' >
 If you are contacting me to speak , please prefix the email with "<strong >Invitation to speak at ...</strong>"
         and the event name.
 </p></section>
 
 <section><h3 class="text-2xl lg:text-4xl pb-3 text-red-600 font-bold" >Mentorship/trainings</h3>
 <p className='text-white md:text-2xl  text-lg md:leading-[3rem]'>
-If you are contacting me to get mentorship, training or even a call for help, I try to help as much as possible, but I would prefer if you use this contact form with as much information about your situation and what you seek from me as possible
+If you are contacting me for guidance, coaching or even just asking for help, I try to be as helpful as I can, with as much information as possible about your situation and exactly what you are asking from me
 </p>
 
 </section>

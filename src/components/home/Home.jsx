@@ -10,7 +10,6 @@ function Home() {
   
   return (
     <div>
-      <Navbar/>
       <Hero/>
       <Tools/>
       <LatestBlogPosts/>

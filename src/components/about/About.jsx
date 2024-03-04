@@ -1,56 +1,159 @@
-import { Link } from 'react-router-dom';
-import img from '../../assets/p2.jpg';
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import {IoLogoWhatsapp} from 'react-icons/io'
-import { MdAlternateEmail } from 'react-icons/md'
-import { FaTwitterSquare } from 'react-icons/fa'
-import Footer from '../Footer';
+import { Link } from "react-router-dom";
+import img from "../../assets/p2.jpg";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaTwitterSquare } from "react-icons/fa";
+import Footer from "../Footer";
+import SocialMedia from "../home/SocialMedia";
+import Img from "../../assets/profile.jpg";
 function About() {
   return (
-    <div className=''>
-      <h1 className='bg-gr text-white p-6 text-4xl text-center'>About</h1>
-      <div className='p-4 '>
-
-        <div>
-
-          <h1 className='text-white text-5xl font-semibold py-4 xl:p-10'>Hi I'm Abdellah 👋</h1>
-
-          <div className='xl:flex xl:flex-row-reverse xl:p-10 xl:gap-8'>
-            {/* imgs */}
-
-            <img src={img} className='rounded-lg w-[300px] mx-auto my-8 ' />
-
-
-
-            <div className='mt-8 text-TextColor text-xl leading-9 '>
-              I am Abdellah Becherair, a student at the Faculty of Computer Science in Algeria (University Kasdi Merbah) in my second year of university. Currently, I work as a front-end developer in the field of web development, thanks to my self-directed learning. My journey in web development began in 2019 when I started learning the basics of the web: HTML, CSS, and JavaScript. I began designing templates and ready-made pages to enhance my practical experience at the start of my academic and professional journey.
-
-              In 2020, I obtained a bachelor's degree in Experimental Science. After that, I joined the Faculty of Computer Science and began my academic journey there. I started learning algorithms and data structures as core subjects using the C language, along with other subjects like Information Systems, Algebra, and Analysis.
-
-              In addition to my academic studies, I was learning web programming as a front-end developer. Now, I have experience in programming and developing professional and appealing user interfaces using technologies like React.js, Next.js, and my JavaScript skills.
+    <>
+      <main
+        class="flex px-0 flex-col md:-my-10 md:my-0 md:flex-row border-b-2 pb-6"
+        data-astro-cid-wu5dj4rx=""
+      >
+        <div
+          id="page-header-content"
+          class="md:w-7/12 md:pr-5"
+          data-astro-cid-wu5dj4rx=""
+        >
+          <div className="text-white">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl md:mt-5 pb-5 text-gray-dark text-white">
+              Hi, I'm <strong data-astro-cid-kh7btl4r="">Abdellah</strong>.
+            </h1>
+            <h2
+              class="text-xl sm:text-2xl md:leading-[2.7rem] md:text-3xl pb-5 text-gray-dark leading-relaxed"
+              data-astro-cid-kh7btl4r=""
+            >
+              <strong>Frontend Engineer</strong> at{" "}
+              <strong data-astro-cid-kh7btl4r="">
+                <a
+                  href="https://ayrime.com"
+                  target="_blank"
+                  data-astro-cid-kh7btl4r=""
+                >
+                  Ayrime
+                </a>
+              </strong>
+              , React Developer, Public{" "}
+              <strong data-astro-cid-kh7btl4r="">Speaker</strong>, Video Courses{" "}
+              <strong data-astro-cid-kh7btl4r="">Author</strong>,and{" "}
+              <strong data-astro-cid-kh7btl4r="">
+                Interested in web performance
+              </strong>
+              .
+            </h2>
+            <h2
+              class="text-xl md:text-2xl pb-5 text-gray-dark leading-relaxed"
+              data-astro-cid-kh7btl4r=""
+            >
+              Becides Web development, I like 🏋️{" "}
+              <em data-astro-cid-kh7btl4r="">GYM</em>, 📚{" "}
+              <em data-astro-cid-kh7btl4r="">Reading</em>,
+            </h2>
+            <div
+              class="pt-0 md:pt-10 pb-5 md:pb-0 flex gap-6 md:gap-10 align-middle flex-wrap justify-center sm:justify-start"
+              data-astro-cid-kh7btl4r=""
+            >
+              <SocialMedia />
             </div>
           </div>
-          <div className='xl:p-10'>
-          <h1 className='block font-semibold text-TextredColor text-4xl mt-10'>My mission is</h1>
-          <p className='mt-8 text-TextColor text-xl leading-9 '>
-          At the heart of my journey is a relentless pursuit of excellence in web development and computer science. With a solid foundation built on self-directed learning and formal education, my mission is to craft exceptional user experiences through innovative front-end solutions. I am dedicated to seamlessly blending creativity and technical expertise, employing cutting-edge technologies such as React.js and Next.js, to shape digital interfaces that captivate, engage, and inspire. By continually pushing the boundaries of my skills and knowledge, I aim to contribute meaningfully to the ever-evolving landscape of web development, making a positive impact and leaving a lasting mark in the digital realm.
-          </p>
-          </div>
-          <div className='xl:p-10'>
-          
-          <div className='bg-gr py-10 px-5  mt-8 text-center text-TextColor text-2xl leading-9 '>
-          I write articles about what I do, and you can benefit from my expertise
-          <Link className='text-white hover:text-TextredColor duration-300 block text-lg mt-7 border-red-600' to='https://www.linkedin.com/in/abdellah-becherair-198825263/'>read articles</Link>
-          </div>
+        </div>
+        <div class="w-full hidden mb-5 mt-12 md:mb-0 md:w-5/12 md:block md:pl-5">
+          <img src={Img} class="hidden md:block" className="rounded-md" />
+        </div>
+      </main>
+      <main
+        class="flex px-0 flex-col md:-my-10 md:my-0 md:flex-row-reverse md:gap-[4rem]"
+        data-astro-cid-wu5dj4rx=""
+      >
+        <div
+          id="page-header-content"
+          class="md:w-7/12 md:pr-5"
+          data-astro-cid-wu5dj4rx=""
+        >
+          <div className="text-white">
+            <div>
+              <p className="mt-[3rem] text-white md:text-2xl text-xl md:leading-[2.4rem] leading-[1.9rem]">
+                I am{" "}
+                <strong className="text-red-600">Abdellah Becherair</strong> , a
+                student at the Faculty of{" "}
+                <strong className="text-red-600">Computer Science</strong> in
+                Algeria (University Kasdi Merbah) in my second year of
+                university. Currently, I work as a
+                <strong className="text-red-600"> front-end developer</strong>{" "}
+                in the field of web development, thanks to my self-directed
+                learning. My journey in web development began in 2019 when I
+                started learning the basics of the web: HTML, CSS, and{" "}
+                <strong className="text-red-600">JavaScript</strong>
+              </p>
+              <p className="mt-10 text-white text-lg leading-[1.9rem] md:text-2xl ">
+                I'm originally from Algeria 🇩🇿 living with my lovely family, a
+                fantastic Mother 🧕 and Father 👨🏻‍💼{" "}
+              </p>
+            </div>
           </div>
         </div>
+        <div class="w-full mb-5 mt-12 md:mb-0 md:w-5/12 md:block md:pl-5">
+          <img src={Img} class="hidden md:block" className="rounded-md" />
+        </div>
+      </main>
 
-
-
+      <div
+        class="flex gap-6 md:gap-10 flex-col flex-wrap mt-[5rem]  md:flex-nowrap md:flex-row"
+        data-astro-cid-kh7btl4r=""
+      >
+        <section class="md:w-1/2" data-astro-cid-kh7btl4r="">
+          <h3 class="pb-3 md:pb-5 text-3xl text-red-500 font-bold">
+            Public Speaking
+          </h3>
+          <p  className="mt-[3rem] text-white md:text-2xl text-xl md:leading-[2.4rem] leading-[1.9rem]">
+          I love to share and simplify things to people, and worked for a bit early in my career as a tutor, so I find public speaking to be the best way to utilize my skills
+          I really love to give lectures in front of the audience, which allows me the opportunity to enhance my technical skills. If there is any event or conference, do not hesitate to <strong><a href="mailto:abdellah.becherair04@gmail.com">contact me</a></strong>
+          </p>
+        </section>
+        <section
+          class="md:w-1/2 md:max-h-[470px] flex justify-center"
+          data-astro-cid-kh7btl4r=""
+        >
+          <img
+            class="object-cover"
+            src={Img}
+            alt="a picture of me speaking"
+            data-astro-cid-kh7btl4r=""
+          />
+        </section>
       </div>
-    <Footer/>
-    </div>
-  )
+
+      <div
+        class="flex gap-6 md:gap-10 flex-col flex-wrap mt-[5rem]  md:flex-nowrap md:flex-row"
+        data-astro-cid-kh7btl4r=""
+      >
+        <section class="md:w-1/2" data-astro-cid-kh7btl4r="">
+          <h3 class="pb-3 md:pb-5 text-3xl text-red-500 font-bold">
+            My Life
+          </h3>
+          <p  className="mt-[3rem] text-white md:text-2xl text-xl md:leading-[2.4rem] leading-[1.9rem]">
+          Great to know more about me! Besides my passion for creating fast websites .reading 📚, and running 🏃‍♂️. Additionally, I love hitting the gym, delving into history books, and continuing my running journey.
+          </p>
+        </section>
+        <section
+          class="md:w-1/2 md:max-h-[470px] mt-8 flex justify-center"
+          data-astro-cid-kh7btl4r=""
+        >
+          <img
+            class="object-cover"
+            src={Img}
+            alt="a picture of me speaking"
+            data-astro-cid-kh7btl4r=""
+          />
+        </section>
+      </div>
+
+    </>
+  );
 }
 
-export default About
+export default About;
