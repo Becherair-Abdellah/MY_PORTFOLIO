@@ -12,8 +12,8 @@ function Footer() {
             <li ><Link to="/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
             <li ><Link to="/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
             <li ><Link to="/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
-            <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
-            <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li>
+            {/* <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
+            <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li> */}
           </ul>
         </div>
         <div className="w-fit  mb-5 flex-1 mt-10  md:mt-0">

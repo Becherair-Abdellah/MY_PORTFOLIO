@@ -42,11 +42,11 @@ function Navbar() {
             setAside(true);
            }}>About</Link>
          </li>
-         <li className='p-3 md:p-0'>
+         {/* <li className='p-3 md:p-0'>
            <Link to="/mainproduct" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>Main Product</Link>
-         </li>
+         </li> */}
 
 
        </ul>
