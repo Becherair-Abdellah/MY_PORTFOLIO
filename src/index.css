@@ -13,10 +13,10 @@ nav {
 .background {
     @apply absolute top-0 left-0 bottom-0 w-[200px] sm:hidden bg-BGmenu
 }
-
+/* 
 button {
     @apply outline-none border-none select-none cursor-pointer fixed top-[18px] left-[15px] w-[40px] h-[40px] rounded-full;
-}
+} */
 
 .refresh {
     @apply p-2 absolute bg-opacity-40 bg-black rounded-lg w-20 h-20 top-10 right-10 flex justify-center items-center cursor-pointer;

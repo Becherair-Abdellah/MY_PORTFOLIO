@@ -34,6 +34,9 @@ export default {
         c4: "#7700FF",
         c5: "#4400FF",
       },
+      width:{
+        cuWidth : 'calc(100% - 70px)'
+      }
 
     },
   },
