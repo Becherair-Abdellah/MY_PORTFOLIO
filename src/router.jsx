@@ -22,16 +22,16 @@ import ResetPassword_Dashboard from './dashboard/ResetPassword'
 const Router = createBrowserRouter([
     // main app
     {
-        path: '/',
+        path: '/MY_PORTFOLIO/',
         element:
             <App/>
         ,
         children: [
             {index:true, element: <Home/>},
-            {path:'/blog', element: <Blog/>,},
-            {path:'/blog/article', element: <Article/>,},
-            {path:'/contact', element: <Contact/>},
-            {path:'/about', element: <About/>},
+            {path:'/MY_PORTFOLIO/blog', element: <Blog/>,},
+            {path:'/MY_PORTFOLIO/blog/article', element: <Article/>,},
+            {path:'/MY_PORTFOLIO/contact', element: <Contact/>},
+            {path:'/MY_PORTFOLIO/about', element: <About/>},
             // {path:'/login', element: <Signin/>},
             // {path:'/signup', element: <Signup/>},
         ]
@@ -41,17 +41,17 @@ const Router = createBrowserRouter([
     },
     // dashboard
     {
-        path: "/Dashboard",
+        path: "/MY_PORTFOLIO/Dashboard",
         element: <Dashboard />,
         children: [
             { index: true, element: <Overview /> },
             { path: "blogs", element: <Blog_dash /> },
         ],
     },
-    { path: "/Dashboard/Signin", element: <Signin /> },
-    { path: "/Dashboard/Email", element: <Email /> },
+    { path: "/MY_PORTFOLIO/Dashboard/Signin", element: <Signin /> },
+    { path: "/MY_PORTFOLIO/Dashboard/Email", element: <Email /> },
 
-    { path: "/Dashboard/reset_password", element: <ResetPassword_Dashboard /> },
-    { path: "/Dashboard/Email", element: <Email /> },
+    { path: "/MY_PORTFOLIO/Dashboard/reset_password", element: <ResetPassword_Dashboard /> },
+    { path: "/MY_PORTFOLIO/Dashboard/Email", element: <Email /> },
 ])
 export default Router
