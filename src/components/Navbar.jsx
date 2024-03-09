@@ -60,9 +60,9 @@ function Navbar() {
          <h1 className='text-xl font-bold text-white md:hidden'>Abdellah Becherair</h1>
          {/* dark mode  */}
          <div >
-             <MdOutlineDarkMode  size={30} className='cursor-pointer' onClick={()=>{
+             {/* <MdOutlineDarkMode  size={30} className='cursor-pointer' onClick={()=>{
                 setDark();
-             }}/>
+             }}/> */}
          </div>
          {/* aside bar  */}
          

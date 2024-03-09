@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import SocialMedia from "./SocialMedia";
 import Img from "../assets/profile.jpg";
 function About() {
+  scrollTo(0,0)
   return (
     <>
       <main

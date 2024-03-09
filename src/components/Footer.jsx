@@ -9,9 +9,9 @@ function Footer() {
         <div className="flex-1 ">
           <h1 className="text-2xl mb-5">Links</h1>
           <ul>
-            <li ><Link to="/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
-            <li ><Link to="/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
-            <li ><Link to="/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
+            <li ><Link to="/MY_PORTFOLIO/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
+            <li ><Link to="/MY_PORTFOLIO/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
+            <li ><Link to="/MY_PORTFOLIO/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
             {/* <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
             <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li> */}
           </ul>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 function Article({id}) {
+  scrollTo(0,0)
   return (
     <>
       <div

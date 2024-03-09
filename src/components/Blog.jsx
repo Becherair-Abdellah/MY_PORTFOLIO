@@ -3,6 +3,7 @@ import { Link, Outlet, Route, Routes } from "react-router-dom";
 // import img1 from '../../assets/img2.jpg'
 import BoxArticle from "./BoxArticle";
 function Blog() {
+  scrollTo(0,0)
   return (
     <>
       <div className="">

@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from '../assets/send.png'
 function Contact() {
+  scrollTo(0,0)
   return (
 <>
 <div class="top-container mb-10 md:mb-14" >
