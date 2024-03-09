@@ -29,7 +29,8 @@ const Router = createBrowserRouter([
         children: [
             {index:true, element: <Home/>},
             {path:'/MY_PORTFOLIO/blog', element: <Blog/>,},
-            {path:'/MY_PORTFOLIO/blog/article', element: <Article/>,},
+            {path:'/MY_PORTFOLIO/blog/article/1', element: <Article id={1}/>,},
+            {path:'/MY_PORTFOLIO/blog/article/2', element: <Article id={2}/>,},
             {path:'/MY_PORTFOLIO/contact', element: <Contact/>},
             {path:'/MY_PORTFOLIO/about', element: <About/>},
             // {path:'/login', element: <Signin/>},
