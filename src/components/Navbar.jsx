@@ -28,9 +28,9 @@ function Navbar() {
            }}><span className='md:hidden'>Home</span><IoHome size={35} className='hidden md:block'/></Link>
          </li>
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/blog" className="" aria-current="page" onClick={()=>{
+           <a href="/MY_PORTFOLIO/blog" className="" aria-current="page" onClick={()=>{
             setAside(true);
-           }}>Blog</Link>
+           }}>Blog</a>
          </li>
          <li className='p-3 md:p-0'>
            <Link to="/MY_PORTFOLIO/contact" className="" aria-current="page" onClick={()=>{
