@@ -10,14 +10,9 @@ function LatestBlogPosts() {
       </div>
       {/* posts  */}
       <div className='flex gap-5 flex-col py-12 md:grid md:grid-cols-2 lg:grid-cols-3'>
-        <Link to='/MY_PORTFOLIO/blog/article/1'>
-
-        <BoxArticle title={`Frontend Engineering`} text={`Software Engineer, Frontend Developer Write some articles on LinkedIn about Web Development`}/>
-        </Link>
-
 <Link to='/MY_PORTFOLIO/blog/article/2'>
 
-        <BoxArticle title={`Frontend Engineering`} text={`Software Engineer, Frontend Developer Write some articles on LinkedIn about Web Development`}/>
+        <BoxArticle title={`What is the CSR and SSR in Web And How they work 🤔`} text={`The CSR && SSR are two different methods for dynamically displaying web pages we will explain them`} date={`10 MAR 2024`} time={`10 min`}/>
 </Link>
 
 

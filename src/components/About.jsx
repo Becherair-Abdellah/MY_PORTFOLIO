@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import img from "../assets/p2.jpg";
+// import img from "../assets/p2.jpg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
