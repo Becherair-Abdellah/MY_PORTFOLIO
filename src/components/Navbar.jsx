@@ -42,11 +42,11 @@ function Navbar() {
             setAside(true);
            }}>About</Link>
          </li>
-         {/* <li className='p-3 md:p-0'>
-           <Link to="/mainproduct" className="" aria-current="page" onClick={()=>{
+         <li className='p-3 md:p-0'>
+           <Link to="/MY_PORTFOLIO/sass" className="" aria-current="page" onClick={()=>{
             setAside(true);
-           }}>Main Product</Link>
-         </li> */}
+           }}>My SASS</Link>
+         </li>
 
 
        </ul>

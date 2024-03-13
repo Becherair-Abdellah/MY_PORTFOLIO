@@ -12,6 +12,7 @@ function Footer() {
             <li ><Link to="/MY_PORTFOLIO/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
             <li ><Link to="/MY_PORTFOLIO/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
             <li ><Link to="/MY_PORTFOLIO/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
+            <li ><Link to="/MY_PORTFOLIO/sass" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">My SASS</Link></li>
             {/* <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
             <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li> */}
           </ul>
