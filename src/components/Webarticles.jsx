@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BoxArticle from './BoxArticle'
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
-function LatestBlogPosts() {
+function Webarticles() {
+    scrollTo(0,0);
   return (
     <div className='py-[3rem]'>
-      <div className='flex justify-between items-center'>
-        <h1 className='font-bold text-xl text-white'>Latest blog</h1>
-        <Link to='/MY_PORTFOLIO/blog' className='font-normal text-red-600 text-lg cursor-pointer hover:underline'>View all posts</Link>
+      <div className='border-b-2 pb-5'>
+        <Link to='/MY_PORTFOLIO/blog' className='font-normal text-red-600 text-lg cursor-pointer hover:underline flex items-center gap-2'><FaArrowLeftLong />back to blog</Link>
+        <h1 className='font-bold text-5xl text-white mt-5'>WEB</h1>
       </div>
       {/* posts  */}
       <div className='flex gap-5 flex-col py-12 md:grid md:grid-cols-2 lg:grid-cols-3'>
@@ -23,4 +25,4 @@ function LatestBlogPosts() {
   )
 }
 
-export default LatestBlogPosts
+export default Webarticles

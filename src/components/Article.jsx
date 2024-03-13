@@ -6,7 +6,9 @@ import img4 from '../assets/browser.jpg'
 import img5 from '../assets/csr.jpg'
 import img6 from '../assets/vs.jpg'
 function Article({id,date,time,title,tag}) {
-  // scrollTo(0,0)
+  useEffect(()=>{
+    scrollTo(0,0)
+  },[])
   return (
     <>
       <div

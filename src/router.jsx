@@ -12,6 +12,16 @@ import Blog_dash from "./dashboard/components/Blog_dash"
 import Signin from './dashboard/Signin'
 import Email from './dashboard/Email'
 import ResetPassword_Dashboard from './dashboard/ResetPassword'
+import Webarticles from "./components/Webarticles"
+import APIs from "./components/APIs"
+import Reactblog from "./components/Reactblog"
+import Gitblog from './components/Gitblog'
+import Docker from './components/Docker'
+import Tailwindcss from './components/Tailwindcss'
+import JavaScript from './components/JavaScript'
+import Nextjs from './components/Nextjs'
+import HtmlCss from './components/HtmlCss'
+import Life from './components/Life'
 {/* <Routes>
     <Route exact path='/MY_PORTFOLIO/home' element={<Home/>} />
     <Route exact path='/MY_PORTFOLIO/about' element={<About/>} />
@@ -29,8 +39,18 @@ const Router = createBrowserRouter([
         children: [
             {index:true, element: <Home/>},
             {path:'/MY_PORTFOLIO/blog', element: <Blog/>,},
-            {path:'/MY_PORTFOLIO/blog/article/1', element: <Article id={2} date={`10 MAR 2024`} time={`10 min`} title={`What is The client-side frameworks And how it works`} tag={'Web'}/>,},
-            {path:'/MY_PORTFOLIO/blog/article/2', element: <Article id={1} date={`10 MAR 2024`} time={`10 min`} title={`What is the CSR and SSR in Web And How they work 🤔`} tag={`Web`}/>,},
+            {path:'/MY_PORTFOLIO/blog/web', element: <Webarticles/>,},
+            {path:'/MY_PORTFOLIO/blog/apis', element: <APIs/>,},
+            {path:'/MY_PORTFOLIO/blog/react', element: <Reactblog/>,},
+            {path:'/MY_PORTFOLIO/blog/git', element: <Gitblog/>,},
+            {path:'/MY_PORTFOLIO/blog/docker', element: <Docker/>,},
+            {path:'/MY_PORTFOLIO/blog/tailwind', element: <Tailwindcss/>,},
+            {path:'/MY_PORTFOLIO/blog/javascript', element: <JavaScript/>,},
+            {path:'/MY_PORTFOLIO/blog/nextjs', element: <Nextjs/>,},
+            {path:'/MY_PORTFOLIO/blog/html+css', element: <HtmlCss/>,},
+            {path:'/MY_PORTFOLIO/blog/life', element: <Life/>,},
+            {path:'/MY_PORTFOLIO/blog/clientside', element: <Article id={2} date={`10 MAR 2024`} time={`10 min`} title={`What is The client-side frameworks And how it works`} tag={'Web'}/>,},
+            {path:'/MY_PORTFOLIO/blog/csr+ssr', element: <Article id={1} date={`10 MAR 2024`} time={`10 min`} title={`What is the CSR and SSR in Web And How they work 🤔`} tag={`Web`}/>,},
             {path:'/MY_PORTFOLIO/contact', element: <Contact/>},
             {path:'/MY_PORTFOLIO/about', element: <About/>},
             // {path:'/login', element: <Signin/>},

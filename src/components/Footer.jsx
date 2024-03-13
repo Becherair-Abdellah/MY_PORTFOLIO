@@ -24,60 +24,66 @@ function Footer() {
         <div className="mt-8 md:mt-0">
         <h1 className="text-2xl mb-5">Tags</h1>
         <div className="flex flex-1 gap-2 w-[300px] flex-wrap mt-4">
-        <a
-            href=""
+        <Link
+            to="/MY_PORTFOLIO/blog/life"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Life
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/html+css"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             HTML+CSS
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/nextjs"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
-            Next
-          </a>
-          <a
-            href=""
+            Next js
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/javascript"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             JavaScript
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/tailwind"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Tailwind
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/docker"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Docker
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/git"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Git
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/react"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             React
-          </a>
-          <a
-            href=""
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/apis"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             APIs
-          </a>
+          </Link>
+          <Link
+            to="/MY_PORTFOLIO/blog/web"
+            className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
+          >
+            Web
+          </Link>
         </div>
         </div>
       </div>

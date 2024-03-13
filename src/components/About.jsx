@@ -6,7 +6,8 @@ import { MdAlternateEmail } from "react-icons/md";
 import { FaTwitterSquare } from "react-icons/fa";
 import Footer from "./Footer";
 import SocialMedia from "./SocialMedia";
-import Img from "../assets/profile.jpg";
+import Img from "../assets/abdellah2.jpg";
+import Img3 from "../assets/abdellah3.jpg";
 function About() {
   scrollTo(0,0)
   return (
@@ -120,8 +121,8 @@ function About() {
           data-astro-cid-kh7btl4r=""
         >
           <img
-            class="object-cover"
-            src={Img}
+            class="object-cover rounded-md"
+            src={Img3}
             alt="a picture of me speaking"
             data-astro-cid-kh7btl4r=""
           />
@@ -139,17 +140,6 @@ function About() {
           <p  className="mt-[3rem] text-white md:text-2xl text-xl md:leading-[2.4rem] leading-[1.9rem]">
           Great to know more about me! Besides my passion for creating fast websites .reading 📚, and running 🏃‍♂️. Additionally, I love hitting the gym, delving into history books, and continuing my running journey.
           </p>
-        </section>
-        <section
-          class="md:w-1/2 md:max-h-[470px] mt-8 flex justify-center"
-          data-astro-cid-kh7btl4r=""
-        >
-          <img
-            class="object-cover"
-            src={Img}
-            alt="a picture of me speaking"
-            data-astro-cid-kh7btl4r=""
-          />
         </section>
       </div>
 
