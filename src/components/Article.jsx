@@ -1,131 +1,862 @@
 import React, { useEffect, useState } from "react";
-import img from '../assets/p1.jpg'
-import img2 from '../assets/request.jpg'
-import img3 from '../assets/ssr.jpg'
-import img4 from '../assets/browser.jpg'
-import img5 from '../assets/csr.jpg'
-import img6 from '../assets/vs.jpg'
-function Article({id,date,time,title,tag}) {
-  useEffect(()=>{
-    scrollTo(0,0)
-  },[])
+import img from "../assets/p1.jpg";
+import img2 from "../assets/request.jpg";
+import img3 from "../assets/ssr.jpg";
+import img4 from "../assets/browser.jpg";
+import img5 from "../assets/csr.jpg";
+import img6 from "../assets/vs.jpg";
+import img7 from "../assets/frontend.jpg";
+import img8 from "../assets/i01.jpg";
+import img9 from "../assets/i02.jpg";
+import img10 from "../assets/i03.jpg";
+import img11 from "../assets/i04.jpg";
+function Article({ id, date, time, title, tag }) {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <div
-        class="top-container  mb-10 md:mb-14 "
-        data-astro-cid-wu5dj4rx=""
-      >
-        {id==1?<main>
-          <h1 className="text-white md:text-5xl text-4xl font-bold leading-[3.5rem] md:text-start md:leading-[4rem] text-center w-full py-4">{title}</h1>
-          <div className="flex items-center gap-5 justify-center md:justify-start mt-10 border-b-2 py-5 md:py-10">
-          <a href="" className="bg-[#454648] text-white px-4 py-1 rounded-xl hover:text-red-600">{tag}</a>
-          <h2 className="text-white text-xl"><span className="mr-10">{date}</span><span>{time} read</span></h2>
-          </div>
-          {/* article  */}
-          <div>
-            {/* content of articles */}
-            <div className="mt-7">
-              <h1 className="text-3xl font-bold text-yellow-400">Article Content</h1>
-              <ul className="pl-5 py-5 text-white">
-                <a href="#overview"><li className='py-1 text-xl underline list-disc'>Overview</li></a>
-                <a href="#server"><li className='py-1 text-xl underline list-disc'>Server Side Rendering (SSR)</li></a>
-                <a href="#client"><li className='py-1 text-xl underline list-disc'>Client Side Rendering (CSR)</li></a>
-                <a href="#comparison"><li className='py-1 text-xl underline list-disc'>Comparison Between CSR and SSR</li></a>
-                <a href="#summary"><li className='py-1 text-xl underline list-disc'>Summary</li></a>
-              </ul>
+      <div class="top-container  mb-10 md:mb-14 " data-astro-cid-wu5dj4rx="">
+        {id == 1 ? (
+          <main>
+            <h1 className="text-white md:text-5xl text-4xl font-bold leading-[3.5rem] md:text-start md:leading-[4rem] text-center w-full py-4">
+              {title}
+            </h1>
+            <div className="flex items-center gap-5 justify-center md:justify-start mt-10 border-b-2 py-5 md:py-10">
+              <a
+                href=""
+                className="bg-[#454648] text-white px-4 py-1 rounded-xl hover:text-red-600"
+              >
+                {tag}
+              </a>
+              <h2 className="text-white text-xl">
+                <span className="mr-10">{date}</span>
+                <span>{time} read</span>
+              </h2>
             </div>
-            {/* content  */}
-            <div className="mt-[4rem]">
-              <a id="overview"></a>
-            <h1 className="text-3xl font-bold text-yellow-400">Overview</h1>
-            <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
-              <p className="text-xl text-white">Web applications have been and continue to be in tremendous evolution over time with the emergence of new technologies in this field, always aiming towards one goal: solving complex problems and finding easy, innovative, and scalable solutions. In the past, web applications heavily relied on servers, which were stored in dedicated repositories with cooling systems to maintain their state .</p>
-              <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
-              <img className=" w-full h-full rounded-md " src={img} alt="" />
+            {/* article  */}
+            <div>
+              {/* content of articles */}
+              <div className="mt-7">
+                <h1 className="text-3xl font-bold text-yellow-400">
+                  Article Content
+                </h1>
+                <ul className="pl-5 py-5 text-white">
+                  <a href="#overview">
+                    <li className="py-1 text-xl underline list-disc">
+                      Overview
+                    </li>
+                  </a>
+                  <a href="#server">
+                    <li className="py-1 text-xl underline list-disc">
+                      Server Side Rendering (SSR)
+                    </li>
+                  </a>
+                  <a href="#client">
+                    <li className="py-1 text-xl underline list-disc">
+                      Client Side Rendering (CSR)
+                    </li>
+                  </a>
+                  <a href="#comparison">
+                    <li className="py-1 text-xl underline list-disc">
+                      Comparison Between CSR and SSR
+                    </li>
+                  </a>
+                  <a href="#summary">
+                    <li className="py-1 text-xl underline list-disc">
+                      Summary
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              {/* content  */}
+              <div className="mt-[4rem]">
+                <a id="overview"></a>
+                <h1 className="text-3xl font-bold text-yellow-400">Overview</h1>
+                <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
+                  <p className="text-xl text-white">
+                    Web applications have been and continue to be in tremendous
+                    evolution over time with the emergence of new technologies
+                    in this field, always aiming towards one goal: solving
+                    complex problems and finding easy, innovative, and scalable
+                    solutions. In the past, web applications heavily relied on
+                    servers, which were stored in dedicated repositories with
+                    cooling systems to maintain their state .
+                  </p>
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p className="text-xl text-white mt-[2rem] md:mt-[4rem]">
+                  Simplified methods were used to generate dynamic web pages,
+                  where pages were generated by servers and sent directly to the
+                  browser for display. This process was known as Server Side
+                  Rendering (SSR). With the advancement of web technologies and
+                  the emergence of JavaScript frameworks like React.js,
+                  Angular.js, and Vue.js, it became possible to execute
+                  rendering operations within the browser itself instead of
+                  relying entirely on the server. This is known as Client-side
+                  rendering, which has framed the role of JavaScript frameworks
+                  .
+                </p>
+
+                <a id="server"></a>
+                <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">
+                  Server Side Rendering (SSR) :
+                </h1>
+                <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
+                  <p className="text-xl text-white">
+                    This term refers to heavy reliance on the server to generate
+                    dynamic web pages. In the event of a request from the client
+                    (the browser) to the server, the server will generate a page
+                    in response to the client's request. This is known as
+                    server-side rendering (SSR) .
+                  </p>
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img2}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p className="text-xl text-white mt-[2rem]">
+                  Let's delve a little deeper. The browser requests the page
+                  using HTTP (GET METHOD) to receive the page. Let's assume that
+                  this page is a list of distinguished students where it's
+                  possible to add/edit/delete a student, and also display
+                  information about each student, etc. All of this is done using
+                  JavaScript. Additionally, this page is styled with a specific
+                  formatting, such that the top-scoring student is highlighted
+                  in green. This page is associated with CSS files. Upon
+                  receiving the request, the server generates an HTML page that
+                  links these pages with other files such as JavaScript and CSS.
+                  Finally, the page is fully prepared with its interactions. The
+                  server also retrieves the necessary data (related to the
+                  students) from the database. Oh, finally, the page is ready
+                  and the client can interact with it.<br></br>
+                  <br></br>
+                  <br></br>
+                  The real problem is that if you navigate to another page
+                  within the same student system, the process starts over:
+                  requesting the page, server-side page generation, sending the
+                  page. Now the client can interact with the page, causing a
+                  large number of requests, negatively impacting the server by
+                  increasing the load and consequently slowing down request
+                  processing.
+                  <br></br>
+                  <br></br>
+                  This Picture Shows how SSR works :
+                  <img
+                    className="w-full h-full rounded-md mt-[2rem]"
+                    src={img3}
+                    alt=""
+                  />
+                </p>
+                <a id="client"></a>
+                <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">
+                  Client Side Rendering (CSR) :
+                </h1>
+                <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
+                  <p className="text-xl text-white">
+                    This term refers to heavy reliance on the server to generate
+                    dynamic web pages. In the event of a request from the client
+                    (the browser) to the server, the server will generate a page
+                    in response to the client's request. This is known as
+                    server-side rendering (SSR) .<br></br>
+                    <br></br>
+                    <br></br>
+                    This term refers to relying on the client-side browser to
+                    generate pages instead of using the server extensively. This
+                    principle is achieved through the use of modern JavaScript
+                    frameworks such as Vue.js, Angular, and React js .
+                  </p>
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img4}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p className="text-xl text-white mt-[2rem]">
+                  This technique achieves very high speed in terms of
+                  application performance and through user interaction with and
+                  displaying the content of the page. Let's delve into how this
+                  technique works, taking the aforementioned example for further
+                  clarification. When the client requests the desired page, a
+                  request (HTTP) is sent. The server generates an empty HTML
+                  page containing only basic information about the page such as
+                  the title, meta, etc. The client receives the empty page. Now,
+                  the browser uses JavaScript frameworks to create the page
+                  content and sends API requests to fetch the necessary data
+                  (student data). The browser will then create the list of
+                  distinguished students with their functions such as editing,
+                  deleting, and displaying. Suppose the user wants to view the
+                  content of a student, which will be available at another
+                  address, for example, www.example.com/students/1/info. The
+                  JavaScript frameworks will change the link to the new address
+                  using what is known as <strong>routing</strong>. Then, the old
+                  content is removed and replaced with the new content, all of
+                  which occurs on a single page. This is known as the{" "}
+                  <strong> Single Page Application (SPA) </strong> .<br></br>
+                  <br></br>
+                  This Picture Shows how CSR works :
+                  <img
+                    className="w-full h-full rounded-md mt-[2rem]"
+                    src={img5}
+                    alt=""
+                  />
+                </p>
+                <a id="comparison"></a>
+                <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">
+                  Comparison between CSR and SSR :
+                </h1>
+                <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
+                  <p className="text-xl text-white">
+                    It cannot be said definitively that CSR is better than SSR
+                    or vice versa. Each technology has its own specific uses.
+                    Sometimes CSR can be disastrous, while SSR can be the
+                    opposite, and vice versa. The choice between using CSR or
+                    SSR depends on the type of project being developed, which
+                    drives us to understand the pros and cons of each
+                    technology.
+                  </p>
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img6}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p className="text-xl text-white mt-[2rem]">
+                  <strong className="">Challenges faced by CSR 💪 : </strong>{" "}
+                  <br></br>
+                  <br></br>
+                  <strong>✔️ Delay in initial rendering : </strong> where users
+                  may experience delays in displaying the page initially due to
+                  the necessary downloading and loading processes of JavaScript
+                  files . <br></br>
+                  <br></br>
+                  <strong>✔️ Improving SEO:</strong> can be difficult for search
+                  engines to understand the content of pages generated by CSR .{" "}
+                  <br></br>
+                  <br></br>
+                  While providing, in return, a fast and seamless user
+                  experience ❤️‍🔥.
+                </p>
+                <p className="text-xl text-white mt-[2rem]">
+                  <strong className="">Challenges faced by SSR 💪 : </strong>{" "}
+                  <br></br>
+                  <br></br>
+                  <strong>✔️ Server overload:</strong> The server's attempt to
+                  generate numerous pages and handle the multitude of requests
+                  submitted to it can impose a heavier load on the server,
+                  adversely affecting its performance. This may compel companies
+                  to purchase powerful resources to ensure performance
+                  efficiency.<br></br>
+                  <br></br>
+                  In return, it provides a distinct experience in terms of
+                  improving SEO, whereby search engines can understand the pages
+                  generated by the server, allowing the page to appear in the
+                  top search results ❤️‍🔥.
+                </p>
+                <a id="summary"></a>
+                <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">
+                  a summary :{" "}
+                </h1>
+                <p className="text-xl text-white mt-[2rem]">
+                  <strong>The CSR : </strong> <br></br>
+                  <br></br>
+                  💡 Web pages are dynamically generated and displayed within
+                  the user's browser using JavaScript . <br></br>
+                  <br></br>
+                  💡 This allows for a smooth user experience where content can
+                  be updated without reloading the page . <br></br>
+                  <br></br>
+                  💡 However, there may be challenges regarding SEO and initial
+                  rendering delays. Nevertheless, there are libraries that
+                  combine SSR and CSR such as{" "}
+                  <strong>
+                    <a href="https://nextjs.org/">Next js</a>
+                  </strong>
+                  , which work to improve SEO.<br></br>
+                  <br></br>
+                  <br></br>
+                  <strong>The SSR : </strong> <br></br>
+                  <br></br>
+                  💡 Web pages are generated and rendered dynamically on the
+                  server before being sent to the browser . <br></br>
+                  <br></br>
+                  💡 This allows for improving SEO and providing a better user
+                  experience for the initial display. However, it may result in
+                  additional costs for the server . <br></br>
+                  <br></br>
+                  Finally, the use of CSR or SSR depends on the application's
+                  needs, performance requirements, and user experience, and each
+                  can be effectively used according to appropriate scenarios.
+                  <br></br>
+                  <br></br>
+                  Thank you 😉.
+                </p>
               </div>
             </div>
-            <p className="text-xl text-white mt-[2rem] md:mt-[4rem]">Simplified methods were used to generate dynamic web pages, where pages were generated by servers and sent directly to the browser for display. This process was known as Server Side Rendering (SSR). With the advancement of web technologies and the emergence of JavaScript frameworks like React.js, Angular.js, and Vue.js, it became possible to execute rendering operations within the browser itself instead of relying entirely on the server. This is known as Client-side rendering, which has framed the role of JavaScript frameworks .</p>
+          </main>
+        ) : (
+          ""
+        )}
+
+        {id == 2 ? (
+          <main>
+            <h1 className="text-white md:text-5xl text-4xl font-bold leading-[3.5rem] md:text-start md:leading-[4rem] text-center w-full py-4">
+              {title}
+            </h1>
+            <div className="flex items-center gap-5 justify-center md:justify-start border-b-2 py-10">
+              <a
+                href=""
+                className="bg-[#454648] text-white px-4 py-1 rounded-xl hover:text-red-600"
+              >
+                {tag}
+              </a>
+              <h2 className="text-white text-xl">
+                <span className="mr-10">{date}</span>
+                <span>{time} read</span>
+              </h2>
+            </div>
+            {/* article  */}
+            <div>
+              {/* content of articles */}
+              <div className="mt-7">
+                <h1 className="text-3xl font-bold text-yellow-400">
+                  Article Content
+                </h1>
+                <ul className="pl-5 py-5 text-white">
+                  <a href="#overview">
+                    <li className="py-1 text-xl underline list-disc">
+                      Overview
+                    </li>
+                  </a>
+                  <a href="#Internet">
+                    <li className="py-1 text-xl underline list-disc">
+                      Internet
+                    </li>
+                  </a>
+                  <a href="#html">
+                    <li className="py-1 text-xl underline list-disc">HTML</li>
+                  </a>
+                  <a href="#css">
+                    <li className="py-1 text-xl underline list-disc">CSS</li>
+                  </a>
+                  <a href="#js">
+                    <li className="py-1 text-xl underline list-disc">
+                      JavaScript
+                    </li>
+                  </a>
+                  <a href="#gitgithub">
+                    <li className="py-1 text-xl underline list-disc">
+                      Git && Github
+                    </li>
+                  </a>
+                  <a href="#npm">
+                    <li className="py-1 text-xl underline list-disc">
+                      NPM | PNPM | YARN
+                    </li>
+                  </a>
+                  <a href="#freamwork">
+                    <li className="py-1 text-xl underline list-disc">
+                      javascript Freamwork
+                    </li>
+                  </a>
+                  <a href="#cssfreamwork">
+                    <li className="py-1 text-xl underline list-disc">
+                      CSS freamwork
+                    </li>
+                  </a>
+                  <a href="#cssar">
+                    <li className="py-1 text-xl underline list-disc">
+                      CSS Architecture
+                    </li>
+                  </a>
+                  <a href="#bnls">
+                    <li className="py-1 text-xl underline list-disc">
+                      Bundlers
+                    </li>
+                  </a>
+                  <a href="#tsr">
+                    <li className="py-1 text-xl underline list-disc">
+                      Task Runners
+                    </li>
+                  </a>
+                  <a href="#lf">
+                    <li className="py-1 text-xl underline list-disc">
+                      Linters | Formatters
+                    </li>
+                  </a>
+                  <a href="#testing">
+                    <li className="py-1 text-xl underline list-disc">
+                      Testing Application
+                    </li>
+                  </a>
+                  <a href="#auth">
+                    <li className="py-1 text-xl underline list-disc">
+                      Authentication | authorization
+                    </li>
+                  </a>
+                  <a href="#security">
+                    <li className="py-1 text-xl underline list-disc">
+                      Web Security
+                    </li>
+                  </a>
+                  <a href="#wc">
+                    <li className="py-1 text-xl underline list-disc">
+                      Web Components
+                    </li>
+                  </a>
+                  <a href="#tcheckers">
+                    <li className="py-1 text-xl underline list-disc">
+                      Type Checkers
+                    </li>
+                  </a>
+                  <a href="#ssr">
+                    <li className="py-1 text-xl underline list-disc">
+                      Server-side-rendering
+                    </li>
+                  </a>
+                  <a href="#ql">
+                    <li className="py-1 text-xl underline list-disc">
+                      graphQL
+                    </li>
+                  </a>
+                  <a href="#pwa">
+                    <li className="py-1 text-xl underline list-disc">
+                      Progressive Web Apps
+                    </li>
+                  </a>
+                  <a href="#appdesk">
+                    <li className="py-1 text-xl underline list-disc">
+                      Mobile App || Desktop App
+                    </li>
+                  </a>
+                  <a href="#summary">
+                    <li className="py-1 text-xl underline list-disc">
+                    Conclusion
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              {/* content  */}
+              <div className="mt-[4rem]">
+                <a id="overview"></a>
+                <h1 className="text-3xl font-bold text-yellow-400">Overview</h1>
+                <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
+                  <p className="text-xl text-white">
+                    During the beginning of your learning journey in any IT
+                    field, you will suffer from something many people struggle
+                    with, which is dispersion. Where do you start, what do you
+                    start with, and what do you study? I want to walk in the
+                    right path. In this article, I will give you a learning path
+                    specific to frontend development, and you won't need any
+                    other path. This path covers everything you need to learn in
+                    this field . <br></br>
+                    <br></br>
+                    🔴<strong>Note :</strong> You are not obligated to follow
+                    this specific path. You can find different and shorter
+                    paths. However, this path is a detailed path covering
+                    everything you need to know in this field.
+                  </p>
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img7}
+                      alt=""
+                    />
+                  </div>
+                  <p className="text-xl text-white mt-7">
+                    🚀 Let's begin! 🚀 <br></br>
+                    <br></br>
+                  </p>
+                </div>
+                {/* internet + css + javascript + git */}
+                <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                  <div>
+                    <a id="Internet"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Internet :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        The first step you take in this field is to understand
+                        what the Internet is, how it came about, and whether
+                        there is an entity that controls it. You need to know
+                        how it works, what HTTP protocols are, the difference
+                        between HTTP and HTTPS, and other protocols. You should
+                        understand what DNS is and how it functions. You also
+                        need to grasp the concept of web hosting, its
+                        relationship with domains, and what a domain is. Lastly,
+                        since you are learning in a web-specific field, you must
+                        learn about browsers, how they work, and their basic
+                        components.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="html"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ HTML :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        HTML (some argue it's not a language) is the foundation
+                        and essence of the web. There is no web application
+                        without HTML it's the mother language describing the
+                        page structure, akin to the skeletal framework of the
+                        web. You must learn HTML basics, such as tags like{" "}
+                        {`<html>`}, {`<!DOCTYPE>`}, {`<body>`}, etc. Understand
+                        semantic HTML like {`<header>`}, {`<footer>`},{" "}
+                        {`<form>`}, etc., as well as forms related to user
+                        inputs like names, email addresses, passwords, and
+                        validation. There's also accessibility, ensuring pages
+                        are suitable for visually and hearing-impaired
+                        individuals, making them easy to interact with. This is
+                        a field you can delve into extensively later on. Another
+                        aspect is SEO, crucial for optimizing pages to rank
+                        highly in search engine results like Google. You can
+                        learn this later after mastering the basics of frontend
+                        development.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="css"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ CSS :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        CSS is a language for formatting, styling, coloring, and
+                        organizing in short. It links a CSS file with an HTML
+                        page to apply CSS styles to HTML, giving the page an
+                        aesthetic appearance, organizing it, and providing a
+                        smooth and beautiful user experience. You must learn the
+                        basics of CSS and how to make the page responsive to all
+                        screen sizes, large, small, and medium.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <p className="text-xl text-white">
+                      👉 After learning CSS and HTML, consider undertaking some
+                      projects to enhance your understanding and adaptability.
+                    </p>
+                    <br></br>
+                    <br></br>
+                    <a id="js"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ JavaScript :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        The backbone of the web and the creator of in-page
+                        interaction, this programming language holds a
+                        prestigious reputation within the IT world. It grants
+                        you complete control over your browser, enabling you to
+                        alter HTML structure, add CSS styles, remove elements,
+                        insert new ones—essentially, anything you can imagine.
+                        You can fetch data from servers, display it, send and
+                        delete data, change paths, and much more. Surely, you'll
+                        learn its fundamentals. Being a programming language,
+                        you'll delve into variables, functions, loops, objects,
+                        OOP, and many more concepts. You'll learn about the DOM,
+                        how to fetch and send data to servers using AJAX and
+                        Fetch, or what's known as APIs.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <p className="text-xl text-white">
+                      👉 After learning JavaScript, you should attempt to create
+                      a relatively large web application where you can apply
+                      what you've previously learned in HTML, CSS, and
+                      JavaScript.
+                    </p>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <a id="gitgithub"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Git | Github :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        Git is a system that tracks your project, saving every
+                        progress you make in it. Its purpose is to enable you to
+                        revert to a previous state or, more precisely, to the
+                        point you desire in your project. GitHub, on the other
+                        hand, is a place for storing codes and projects. It
+                        allows you to work on a project with a team, where each
+                        member sends their required work, enabling other
+                        individuals to download the latest version of the
+                        project.
+                      </p>
+                    </div>
+                  </div>
+                  {/* img  */}
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img8}
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                {/* package manager + css + javascript + git */}
+                <div className="mt-[4rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                  <div>
+                    <a id="npm"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ NPM | PNPM | YARN :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      Or what is known as the bundle manager works on a Node.js environment specific to the JavaScript language, allowing you to use external libraries and codes developed by others, and technologies that assist you in your project without the need to rewrite them from scratch.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="freamwork"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ javascript Freamwork :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      These are called JavaScript frameworks, which are known for modern technologies within the web domain, or what is known as Single Page Application (SPA) system, where they rely on the concept of client-side rendering (CSR) instead of server-side rendering (SSR). JavaScript frameworks provide a wonderful and smooth user experience, as well as offering very modern and flexible user interfaces.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="cssfreamwork"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ CSS Freamwork :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                        CSS is a language for formatting, styling, coloring, and
+                        organizing in short. It links a CSS file with an HTML
+                        page to apply CSS styles to HTML, giving the page an
+                        aesthetic appearance, organizing it, and providing a
+                        smooth and beautiful user experience. You must learn the
+                        basics of CSS and how to make the page responsive to all
+                        screen sizes, large, small, and medium.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+               
+                    <a id="cssar"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ CSS architecture :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      CSS architecture is the method by which CSS files are organized and structured in a web project. When building a website, developers can either write CSS in one large file or divide it into smaller, more organized files that align with the project's structure. CSS architecture allows you to organize styles and rules in a way that makes it easier to understand and maintain. You can learn it at any time, as it is not currently mandatory, In addition, you need to learn CSS preprocessors.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="bnls"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Module Bundlers :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      When you study a concept in JavaScript called modules, you can import and export functions from one file to another. Once you finish the development stage and enter the production stage, bundlers gather all imported and exported codes into one compressed JavaScript file that is difficult to read. These bundlers organize the code and increase its efficiency.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="tsr"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Task runners :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      Task Runners are software tools used to automate and organize development tasks, as well as manage the processes of building and preparing web applications.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="lf"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Linters && formatters :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      They are tools used to assist developers during the development stage. Linters work to detect errors, identify uncommon or incorrect coding practices, and provide solutions. As for formatters, they organize code, potentially colorize it, and define elements such as functions, indicating their beginning and end. They give a specific appearance to the code, making it easier to read.
+                      </p>
+                    </div>
+                  </div>
+                  {/* img  */}
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img9}
+                      alt=""
+                    />
+                  </div>
+                </div>
 
 
+                {/* testing + auth + security + web component + server side */}
+                <div className="mt-[4rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                  <div>
+                    <a id="testing"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Testing Application :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      They are tools used for testing applications before launching them to customers, ensuring that the application behaves as expected. We use tools like Vitest, Jest, Cypress to perform this role.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="auth"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Authentication | authorization:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      Authentication and authorization strategies are methods or techniques used to verify the identity of a user or system in order to grant access to a protected resource. For example, logging into a specific application and allowing the user to post a publication, share a comment, or like a particular item, all of which are done through what is known as authentication and authorization.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="security"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Web Security Knowledge :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      "Not currently mandatory to study, you can learn it at any time." It covers the fundamentals of securing web applications, where developers take preventive measures to protect their applications from threats that can affect their business operations. You learn concepts related to resources from the same source (CORS), HTTPS, and others.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+               
+                    <a id="wc"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Web Components:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      Web components are a set of different technologies that allow you to create reusable custom elements, encapsulating their functionality away from the rest of your code and using them in your web applications without the need to rewrite them from scratch, just by using their identifier.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="tcheckers"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Type Checkers :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      "Not currently mandatory to learn, you can learn it at any time." In this title, TypeScript, similar to JavaScript, is used to fulfill this role. In short, type checkers help developers write code with fewer errors during the development stage by adding types within the code and then removing them during the compilation process.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="ssr"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Server-side rendering:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      "Not currently mandatory to learn, you can learn it at any time." It refers to a method of building web applications, contrasting with CSR. SSR stands for Server-Side Rendering, which involves creating and populating web pages with data from the server, unlike CSR, which refers to creating web pages from the browser side. This is what JavaScript frameworks do.
+                      </p>
+                    </div>
+                  </div>
+                  {/* img  */}
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img10}
+                      alt=""
+                    />
+                  </div>
+                </div>
 
-            <a id="server"></a>
-            <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">Server Side Rendering (SSR) :</h1>
-            <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
-              <p className="text-xl text-white">This term refers to heavy reliance on the server to generate dynamic web pages. In the event of a request from the client (the browser) to the server, the server will generate a page in response to the client's request. This is known as server-side rendering (SSR) .</p>
-              <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
-              <img className=" w-full h-full rounded-md " src={img2} alt="" />
+                {/* last phrase */}
+                <div className="mt-[4rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                  <div>
+                    <a id="ql"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ graphQL:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      "Not currently mandatory to learn, you can learn it at any time." It refers to a specific method of using APIs. There are two approaches to using APIs: GraphQL and RESTful API.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="pwq"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅  Progressive Web Apps :{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      "Not currently mandatory to learn, you can learn it at any time." They are called Progressive Web Applications (PWAs), which are applications that provide an experience similar to mobile applications, allowing you to download the application to your device as well as access it through the browser. They incorporate a range of concepts such as web sockets, service workers, etc.
+                      </p>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <a id="appdesk"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Mobile App || Desktop App:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem] border-b-2 py-10">
+                      <p className="text-xl text-white">
+                      Finally, there are Mobile applications and Desktop applications: React Native is used to develop mobile applications using JavaScript. One of the most famous applications made with this framework is Instagram. Electron.js is a framework used to develop desktop applications. An example of a famous application built with Electron.js is Visual Studio Code.
+                      </p>
+                    </div>
+                  </div>
+                  {/* img  */}
+                  <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
+                    <img
+                      className=" w-full h-full rounded-md "
+                      src={img11}
+                      alt=""
+                    />
+                  </div>
+                  <br></br>
+                    <br></br>
+               
+                    <a id="summary"></a>
+                    <h1 className="text-3xl font-bold text-yellow-400">
+                      ✅ Conclusion:{" "}
+                    </h1>
+                    <div className="mt-[1rem] md:grid grid-cols-1 items-start gap-[3rem]">
+                      <p className="text-xl text-white">
+                      Finally, this is all I could write for this track. You can start exploring other paths, but this track covers comprehensive frontend engineering.
+                      <br></br>
+                      <br></br>
+                      you can visit website to get more rooadmaps other field IT : <a className="text-red-600 underline" href="https://roadmap.sh/">get more</a>
+                      </p>
+                    </div>
+                </div>
               </div>
             </div>
-            <p className="text-xl text-white mt-[2rem]">Let's delve a little deeper. The browser requests the page using HTTP (GET METHOD) to receive the page. Let's assume that this page is a list of distinguished students where it's possible to add/edit/delete a student, and also display information about each student, etc. All of this is done using JavaScript. Additionally, this page is styled with a specific formatting, such that the top-scoring student is highlighted in green. This page is associated with CSS files. Upon receiving the request, the server generates an HTML page that links these pages with other files such as JavaScript and CSS. Finally, the page is fully prepared with its interactions. The server also retrieves the necessary data (related to the students) from the database. Oh, finally, the page is ready and the client can interact with it.<br></br><br></br><br></br>
-            The real problem is that if you navigate to another page within the same student system, the process starts over: requesting the page, server-side page generation, sending the page. Now the client can interact with the page, causing a large number of requests, negatively impacting the server by increasing the load and consequently slowing down request processing.
-            <br></br><br></br>
-            This Picture Shows how SSR works : 
-            <img className="w-full h-full rounded-md mt-[2rem]" src={img3} alt="" />
-            </p>
-            <a id="client"></a>
-            <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">Client Side Rendering (CSR) :</h1>
-            <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
-              <p className="text-xl text-white">This term refers to heavy reliance on the server to generate dynamic web pages. In the event of a request from the client (the browser) to the server, the server will generate a page in response to the client's request. This is known as server-side rendering (SSR) .<br></br><br></br><br></br>
-              This term refers to relying on the client-side browser to generate pages instead of using the server extensively. This principle is achieved through the use of modern JavaScript frameworks such as Vue.js, Angular, and React js .
-              </p>
-              <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
-              <img className=" w-full h-full rounded-md " src={img4} alt="" />
-              </div>
-            </div>
-            <p className="text-xl text-white mt-[2rem]">This technique achieves very high speed in terms of application performance and through user interaction with and displaying the content of the page. Let's delve into how this technique works, taking the aforementioned example for further clarification. When the client requests the desired page, a request (HTTP) is sent. The server generates an empty HTML page containing only basic information about the page such as the title, meta, etc. The client receives the empty page. Now, the browser uses JavaScript frameworks to create the page content and sends API requests to fetch the necessary data (student data). The browser will then create the list of distinguished students with their functions such as editing, deleting, and displaying. Suppose the user wants to view the content of a student, which will be available at another address, for example, www.example.com/students/1/info. The JavaScript frameworks will change the link to the new address using what is known as <strong>routing</strong>. Then, the old content is removed and replaced with the new content, all of which occurs on a single page. This is known as the <strong> Single Page Application (SPA) </strong> .
-            <br></br><br></br>
-            This Picture Shows how CSR works : 
-            <img className="w-full h-full rounded-md mt-[2rem]" src={img5} alt="" />
-            </p>
-            <a id="comparison"></a>
-            <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">Comparison between CSR and SSR :</h1>
-            <div className="mt-[1rem] md:grid grid-cols-2 items-start gap-[3rem]">
-              <p className="text-xl text-white">It cannot be said definitively that CSR is better than SSR or vice versa. Each technology has its own specific uses. Sometimes CSR can be disastrous, while SSR can be the opposite, and vice versa. The choice between using CSR or SSR depends on the type of project being developed, which drives us to understand the pros and cons of each technology.
-              </p>
-              <div className="mt-[2rem] md:mt-0 w-full h-full object-fill rounded-md">
-              <img className=" w-full h-full rounded-md " src={img6} alt="" />
-              </div>
-            </div>
-            <p className="text-xl text-white mt-[2rem]">
-              <strong className="">Challenges faced by CSR 💪 : </strong> <br></br><br></br>
-              <strong>✔️ Delay in initial rendering : </strong> where users may experience delays in displaying the page initially due to the necessary downloading and loading processes of JavaScript files . <br></br><br></br>
-              <strong>✔️ Improving SEO:</strong> can be difficult for search engines to understand the content of pages generated by CSR . <br></br><br></br>
-              While providing, in return, a fast and seamless user experience ❤️‍🔥.
-            </p>
-            <p className="text-xl text-white mt-[2rem]">
-              <strong className="">Challenges faced by SSR 💪 : </strong> <br></br><br></br>
-              <strong>✔️ Server overload:</strong> The server's attempt to generate numerous pages and handle the multitude of requests submitted to it can impose a heavier load on the server, adversely affecting its performance. This may compel companies to purchase powerful resources to ensure performance efficiency.<br></br><br></br>
-              
-              In return, it provides a distinct experience in terms of improving SEO, whereby search engines can understand the pages generated by the server, allowing the page to appear in the top search results ❤️‍🔥.
-            </p>
-            <a id="summary"></a>
-            <h1 className="text-3xl mt-[4rem] font-bold text-yellow-400">a summary : </h1>
-            <p className="text-xl text-white mt-[2rem]">
-              <strong>The CSR : </strong> <br></br><br></br>
-              💡  Web pages are dynamically generated and displayed within the user's browser using JavaScript . <br></br><br></br>
-              💡  This allows for a smooth user experience where content can be updated without reloading the page . <br></br><br></br>
-              💡  However, there may be challenges regarding SEO and initial rendering delays. Nevertheless, there are libraries that combine SSR and CSR such as <strong><a href="https://nextjs.org/">Next js</a></strong>, which work to improve SEO.<br></br>
-              <br></br><br></br>
-              <strong>The SSR : </strong> <br></br><br></br>
-              💡  Web pages are generated and rendered dynamically on the server before being sent to the browser . <br></br><br></br>
-              💡  This allows for improving SEO and providing a better user experience for the initial display. However, it may result in additional costs for the server . <br></br><br></br>
-              Finally, the use of CSR or SSR depends on the application's needs, performance requirements, and user experience, and each can be effectively used according to appropriate scenarios.
-
-              <br></br><br></br>
-              Thank you 😉.
-            </p>
-            </div>
-          </div>
-        </main>:''}
-
-        {id==2?<main>
-          <h1 className="text-white md:text-5xl text-4xl font-bold leading-[3.5rem] md:text-start md:leading-[4rem] text-center w-full py-4">What is The client-side frameworks And how it works</h1>
-          <div className="flex items-center gap-5 justify-center md:justify-start">
-          <a href="" className="bg-[#454648] text-white px-4 py-1 rounded-xl hover:text-red-600">Life</a>
-          <h2 className="text-white text-xl"><span className="mr-10">21 Feb 2024</span><span>10 min read</span></h2>
-          </div>
-          
-        </main>:''}
+          </main>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );
