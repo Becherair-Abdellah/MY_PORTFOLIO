@@ -17,6 +17,7 @@ function Webarticles() {
         <BoxArticle title={`What is the CSR and SSR in Web And How they work 🤔`} text={`The CSR && SSR are two different methods for dynamically displaying web pages we will explain them`} date={`10 MAR 2024`} time={`10 min`}/>
 </Link>
 <Link to='/MY_PORTFOLIO/blog/frontendexpert'>
+
 <BoxArticle title={`How to become a frontend expert 👌`} text={`In this article, we present the learning path of frontend engineering from the beginner stage to the advanced stage.`} date={`17 MAR 2024`} time={`20 min`}/>
 </Link>
 
