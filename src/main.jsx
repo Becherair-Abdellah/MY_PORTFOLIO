@@ -8,7 +8,6 @@ import store from './dashboard/redux/store.js'
 ReactDOM.createRoot(document.getElementById('root')).render(
  
     <Provider store={store}>
-
         <RouterProvider router={Router}/>
     </Provider>
 

@@ -48,6 +48,12 @@ function Navbar() {
            }}>My SASS</Link>
          </li>
 
+         <li className='p-3 md:p-0'>
+           <Link to="/MY_PORTFOLIO/my-components" className="" aria-current="page" onClick={()=>{
+            setAside(true);
+           }}>My Components</Link>
+         </li>
+
 
        </ul>
 

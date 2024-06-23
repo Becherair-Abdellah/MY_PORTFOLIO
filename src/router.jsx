@@ -22,7 +22,8 @@ import JavaScript from './components/JavaScript'
 import Nextjs from './components/Nextjs'
 import HtmlCss from './components/HtmlCss'
 import Life from './components/Life'
-import MySass from "./components/MySass"
+import MySass from "./components/MySass" 
+import MyComponent from "./components/MyComponent"
 {/* <Routes>
     <Route exact path='/MY_PORTFOLIO/home' element={<Home/>} />
     <Route exact path='/MY_PORTFOLIO/about' element={<About/>} />
@@ -51,8 +52,10 @@ const Router = createBrowserRouter([
             {path:'/MY_PORTFOLIO/blog/html+css', element: <HtmlCss/>,},
             {path:'/MY_PORTFOLIO/blog/life', element: <Life/>,},
             {path:'/MY_PORTFOLIO/sass', element: <MySass/>,},
+            {path:'/MY_PORTFOLIO/my-components', element: <MyComponent/>,},
             {path:'/MY_PORTFOLIO/blog/frontendexpert', element: <Article id={2} date={`17 MAR 2024`} time={`20 min`} title={`How to become a frontend expert 👌`} tag={'Web'}/>,},
             {path:'/MY_PORTFOLIO/blog/csr+ssr', element: <Article id={1} date={`10 MAR 2024`} time={`10 min`} title={`What is the CSR and SSR in Web And How they work 🤔`} tag={`Web`}/>,},
+            {path:'/MY_PORTFOLIO/blog/auth', element: <Article id={1} date={`03 APR 2024`} time={`15 min`} title={`The Authentication and Authorization 🔒🔒`} tag={`Web`}/>,},
             {path:'/MY_PORTFOLIO/contact', element: <Contact/>},
             {path:'/MY_PORTFOLIO/about', element: <About/>},
             // {path:'/login', element: <Signin/>},
