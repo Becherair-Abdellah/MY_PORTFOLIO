@@ -7,7 +7,7 @@ function Tailwindcss() {
   return (
     <div className='py-[3rem]'>
       <div className='border-b-2 pb-5'>
-        <Link to='/MY_PORTFOLIO/blog' className='font-normal text-red-600 text-lg cursor-pointer hover:underline flex items-center gap-2'><FaArrowLeftLong />back to blog</Link>
+        <Link to='/blog' className='font-normal text-red-600 text-lg cursor-pointer hover:underline flex items-center gap-2'><FaArrowLeftLong />back to blog</Link>
         <h1 className='font-bold text-5xl text-white mt-5'>Tailwind</h1>
       </div>
       {/* posts  */}

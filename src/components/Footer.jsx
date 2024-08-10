@@ -9,10 +9,10 @@ function Footer() {
         <div className="flex-1 ">
           <h1 className="text-2xl mb-5">Links</h1>
           <ul>
-            <li ><Link to="/MY_PORTFOLIO/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
-            <li ><Link to="/MY_PORTFOLIO/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
-            <li ><Link to="/MY_PORTFOLIO/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
-            <li ><Link to="/MY_PORTFOLIO/sass" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">My SASS</Link></li>
+            <li ><Link to="/blog" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Blog</Link></li>
+            <li ><Link to="/contact" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Contact</Link></li>
+            <li ><Link to="/about" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">About</Link></li>
+            <li ><Link to="/sass" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">My SASS</Link></li>
             {/* <li ><Link to="/ourproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">main Product</Link></li>
             <li ><Link to="/oldproduct" className="hover:text-red-600 cursor-pointer text-lg mb-1 w-fit block">Old my project when i learn</Link></li> */}
           </ul>
@@ -26,61 +26,61 @@ function Footer() {
         <h1 className="text-2xl mb-5">Tags</h1>
         <div className="flex flex-1 gap-2 w-[300px] flex-wrap mt-4">
         <Link
-            to="/MY_PORTFOLIO/blog/life"
+            to="/blog/life"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Life
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/html+css"
+            to="/blog/html+css"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             HTML+CSS
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/nextjs"
+            to="/blog/nextjs"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Next js
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/javascript"
+            to="/blog/javascript"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             JavaScript
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/tailwind"
+            to="/blog/tailwind"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Tailwind
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/docker"
+            to="/blog/docker"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Docker
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/git"
+            to="/blog/git"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Git
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/react"
+            to="/blog/react"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             React
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/apis"
+            to="/blog/apis"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             APIs
           </Link>
           <Link
-            to="/MY_PORTFOLIO/blog/web"
+            to="/blog/web"
             className="bg-[#454648] px-4 py-1 rounded-xl hover:text-red-600"
           >
             Web

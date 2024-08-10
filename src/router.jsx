@@ -25,39 +25,39 @@ import Life from './components/Life'
 import MySass from "./components/MySass" 
 import MyComponent from "./components/MyComponent"
 {/* <Routes>
-    <Route exact path='/MY_PORTFOLIO/home' element={<Home/>} />
-    <Route exact path='/MY_PORTFOLIO/about' element={<About/>} />
-    <Route exact path='/MY_PORTFOLIO/projects' element={<Projects/>} />
+    <Route exact path='/home' element={<Home/>} />
+    <Route exact path='/about' element={<About/>} />
+    <Route exact path='/projects' element={<Projects/>} />
 
    
     </Routes> */}
 const Router = createBrowserRouter([
     // main app
     {
-        path: '/MY_PORTFOLIO/',
+        path: '/',
         element:
             <App/>
         ,
         children: [
             {index:true, element: <Home/>},
-            {path:'/MY_PORTFOLIO/blog', element: <Blog/>,},
-            {path:'/MY_PORTFOLIO/blog/web', element: <Webarticles/>,},
-            {path:'/MY_PORTFOLIO/blog/apis', element: <APIs/>,},
-            {path:'/MY_PORTFOLIO/blog/react', element: <Reactblog/>,},
-            {path:'/MY_PORTFOLIO/blog/git', element: <Gitblog/>,},
-            {path:'/MY_PORTFOLIO/blog/docker', element: <Docker/>,},
-            {path:'/MY_PORTFOLIO/blog/tailwind', element: <Tailwindcss/>,},
-            {path:'/MY_PORTFOLIO/blog/javascript', element: <JavaScript/>,},
-            {path:'/MY_PORTFOLIO/blog/nextjs', element: <Nextjs/>,},
-            {path:'/MY_PORTFOLIO/blog/html+css', element: <HtmlCss/>,},
-            {path:'/MY_PORTFOLIO/blog/life', element: <Life/>,},
-            {path:'/MY_PORTFOLIO/sass', element: <MySass/>,},
-            {path:'/MY_PORTFOLIO/my-components', element: <MyComponent/>,},
-            {path:'/MY_PORTFOLIO/blog/frontendexpert', element: <Article id={2} date={`17 MAR 2024`} time={`20 min`} title={`How to become a frontend expert 👌`} tag={'Web'}/>,},
-            {path:'/MY_PORTFOLIO/blog/csr+ssr', element: <Article id={1} date={`10 MAR 2024`} time={`10 min`} title={`What is the CSR and SSR in Web And How they work 🤔`} tag={`Web`}/>,},
-            {path:'/MY_PORTFOLIO/blog/auth', element: <Article id={1} date={`03 APR 2024`} time={`15 min`} title={`The Authentication and Authorization 🔒🔒`} tag={`Web`}/>,},
-            {path:'/MY_PORTFOLIO/contact', element: <Contact/>},
-            {path:'/MY_PORTFOLIO/about', element: <About/>},
+            {path:'/blog', element: <Blog/>,},
+            {path:'/blog/web', element: <Webarticles/>,},
+            {path:'/blog/apis', element: <APIs/>,},
+            {path:'/blog/react', element: <Reactblog/>,},
+            {path:'/blog/git', element: <Gitblog/>,},
+            {path:'/blog/docker', element: <Docker/>,},
+            {path:'/blog/tailwind', element: <Tailwindcss/>,},
+            {path:'/blog/javascript', element: <JavaScript/>,},
+            {path:'/blog/nextjs', element: <Nextjs/>,},
+            {path:'/blog/html+css', element: <HtmlCss/>,},
+            {path:'/blog/life', element: <Life/>,},
+            {path:'/sass', element: <MySass/>,},
+            {path:'/my-components', element: <MyComponent/>,},
+            {path:'/blog/frontendexpert', element: <Article id={2} date={`17 MAR 2024`} time={`20 min`} title={`How to become a frontend expert 👌`} tag={'Web'}/>,},
+            {path:'/blog/csr+ssr', element: <Article id={1} date={`10 MAR 2024`} time={`10 min`} title={`What is the CSR and SSR in Web And How they work 🤔`} tag={`Web`}/>,},
+            {path:'/blog/auth', element: <Article id={1} date={`03 APR 2024`} time={`15 min`} title={`The Authentication and Authorization 🔒🔒`} tag={`Web`}/>,},
+            {path:'/contact', element: <Contact/>},
+            {path:'/about', element: <About/>},
             // {path:'/login', element: <Signin/>},
             // {path:'/signup', element: <Signup/>},
         ]
@@ -67,17 +67,17 @@ const Router = createBrowserRouter([
     },
     // dashboard
     {
-        path: "/MY_PORTFOLIO/Dashboard",
+        path: "/Dashboard",
         element: <Dashboard />,
         children: [
             { index: true, element: <Overview /> },
             { path: "blogs", element: <Blog_dash /> },
         ],
     },
-    { path: "/MY_PORTFOLIO/Dashboard/Signin", element: <Signin /> },
-    { path: "/MY_PORTFOLIO/Dashboard/Email", element: <Email /> },
+    { path: "/Dashboard/Signin", element: <Signin /> },
+    { path: "/Dashboard/Email", element: <Email /> },
 
-    { path: "/MY_PORTFOLIO/Dashboard/reset_password", element: <ResetPassword_Dashboard /> },
-    { path: "/MY_PORTFOLIO/Dashboard/Email", element: <Email /> },
+    { path: "/Dashboard/reset_password", element: <ResetPassword_Dashboard /> },
+    { path: "/Dashboard/Email", element: <Email /> },
 ])
 export default Router

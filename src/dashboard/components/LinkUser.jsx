@@ -19,10 +19,10 @@ function LinksUser() {
         duration: 0.1,
       }} className=' duration-300 text-white w-full rounded-md  mt-4 '>
 
-      <NavLink to="/MY_PORTFOLIO/dashboard">
+      <NavLink to="/dashboard">
       <li className='flex items-center gap-3 p-3 px-2 text-[17px] hover:bg-[#ffffff14]  cursor-pointer rounded-md text-white-600' ><LuLayoutDashboard size={21}/> <span className={spanStyle}>Dashboard</span></li>
       </NavLink>
-      <NavLink to="/MY_PORTFOLIO/dashboard/blogs">
+      <NavLink to="/dashboard/blogs">
       <li className='flex items-center gap-3 p-3 px-2 text-[17px] hover:bg-[#ffffff14]  cursor-pointer rounded-md text-white-600' ><RiArticleLine size={21}/> <span className={spanStyle}>Articles</span></li>
       </NavLink>
 

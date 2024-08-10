@@ -23,33 +23,33 @@ function Navbar() {
          </div>
 
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/" className="active" aria-current="page" onClick={()=>{
+           <Link to="/" className="active" aria-current="page" onClick={()=>{
             setAside(true);
            }}><span className='md:hidden'>Home</span><IoHome size={35} className='hidden md:block'/></Link>
          </li>
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/blog" className="" aria-current="page" onClick={()=>{
+           <Link to="/blog" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>Blog</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/contact" className="" aria-current="page" onClick={()=>{
+           <Link to="/contact" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>Contact</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/about" className="" aria-current="page" onClick={()=>{
+           <Link to="/about" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>About</Link>
          </li>
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/sass" className="" aria-current="page" onClick={()=>{
+           <Link to="/sass" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>My SASS</Link>
          </li>
 
          <li className='p-3 md:p-0'>
-           <Link to="/MY_PORTFOLIO/my-components" className="" aria-current="page" onClick={()=>{
+           <Link to="/my-components" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>My Components</Link>
          </li>
