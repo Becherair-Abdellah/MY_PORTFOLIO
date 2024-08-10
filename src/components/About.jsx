@@ -100,7 +100,7 @@ function About() {
           </div>
         </div>
         <div class="w-full mb-5 mt-12 md:mb-0 md:w-5/12 md:block md:pl-5">
-          <img src={Img2} class="hidden md:block" className="rounded-md" />
+          <img src={Img} class="hidden md:block" className="rounded-md" />
         </div>
       </main>
 
