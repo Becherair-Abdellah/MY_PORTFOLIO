@@ -42,17 +42,18 @@ function Navbar() {
             setAside(true);
            }}>About</Link>
          </li>
-         <li className='p-3 md:p-0'>
+
+         {/* <li className='p-3 md:p-0'>
            <Link to="/sass" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>My SASS</Link>
-         </li>
+         </li> */}
 
-         <li className='p-3 md:p-0'>
+         {/* <li className='p-3 md:p-0'>
            <Link to="/my-components" className="" aria-current="page" onClick={()=>{
             setAside(true);
            }}>My Components</Link>
-         </li>
+         </li> */}
 
 
        </ul>
